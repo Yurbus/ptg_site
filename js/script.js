@@ -27,13 +27,15 @@ const isMobile = {
 };
 
 // Animation
-AOS.init({
-    duration: 1200,
-})
+// AOS.init({
+//     duration: 1200,
+// })
+
+
 
 // Меню бурнер
 const iconMenu = document.querySelector('.menu__icon');
-const menuBody = document.querySelector('.header__mobile-menu');
+const menuBody = document.querySelector('.header__menu');
 if (iconMenu) {
 	iconMenu.addEventListener("click", function (e) {
 		document.body.classList.toggle('_lock');

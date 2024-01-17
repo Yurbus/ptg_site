@@ -1,12 +1,17 @@
 
 @font-face {
-    font-family: 'Conthrax';
-    src: url('../fonts/ConthraxSb-Regular.eot');
-    src: local('../fonts/ConthraxSb-Regular'),
-        url('../fonts/ConthraxSb-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/ConthraxSb-Regular.woff2') format('woff2'),
-        url('../fonts/ConthraxSb-Regular.woff') format('woff'),
-        url('../fonts/ConthraxSb-Regular.ttf') format('truetype');
+    font-family: 'lao-mn-bold';
+    src: url('../fonts/lao-mn-bold.eot');
+    src: local('../fonts/lao-mn-bold'),
+        url('../fonts/lao-mn-bold.ttf') format('truetype');
     font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'lao-mn';
+    src: url('../fonts/lao-mn.eot');
+    src: local('../fonts/lao-mn'),
+        url('../fonts/lao-mn.ttf') format('truetype');
+    font-weight: 400;
     font-style: normal;
 }
