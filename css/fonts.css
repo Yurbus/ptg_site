@@ -1,0 +1,12 @@
+
+@font-face {
+    font-family: 'Conthrax';
+    src: url('../fonts/ConthraxSb-Regular.eot');
+    src: local('../fonts/ConthraxSb-Regular'),
+        url('../fonts/ConthraxSb-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ConthraxSb-Regular.woff2') format('woff2'),
+        url('../fonts/ConthraxSb-Regular.woff') format('woff'),
+        url('../fonts/ConthraxSb-Regular.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
