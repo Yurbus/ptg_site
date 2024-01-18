@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-EN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainability</title>
+
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/popups.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- <link rel="stylesheet" href="css/slick.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300&display=swap" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/fonts.css">
+    <!-- <link rel="stylesheet" href="css/slick.css"> -->
+
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__body">
+                    <div class="header__logo">
+                        <a href="#"><img src="img/logo_black.svg" alt="Ptg logo"></a>
+                    </div>
+                    <div class="header__menu">
+                        <ul class="menu__list">
+                            <li class="menu__link carrent-menu__link">Products and Service<img src="img/arrow_menu.svg" alt="arrow">
+                                <ul class="sub-menu__List">
+                                    <li class="sub-menu__link"><a href="">Link 1</a></li>
+                                    <li class="sub-menu__link"><a href="">Link 2</a></li>
+                                    <li class="sub-menu__link"><a href="">Link 3</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu__link"><a class="menu__link" href="">Sustainability</a></li>
+                            <li class="menu__link"><a class="menu__link" href="">About us</a></li> 
+                            <li class="menu__link"><a class="menu__link" href="">Contact</a></li> 
+                            <li class="menu__link"><a class="menu__link" href="">News</a></li>             
+                        </ul>
+                        <div class="header__button-mobile btn__header">
+                            <a href="#popup" class="contact_us popup-link">Contact</a>
+                        </div>
+                    </div>
+                    <div class="header__button btn__header">
+                        <a href="#popup" class="contact_us popup-link">Contact</a>
+                    </div>
+                    <!----- mobile menu icon-------->
+                    <div class="menu__icon">
+                        <span></span>
+                    </div>
+                </div>
+
+            </div>
+        </header>
+
+        <main class="page">
+            
+
+        </main>
+
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__body">
+
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div id="popup" class="popup"><!-- Popup -->
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#" class="popup__close close-popup"><img src="img/close.svg" alt="close"></a>
+                <form action="" id="form" method="POST" class="form__body">
+                    <h4 class="form__title">Замовити консультацію</h4>
+                    <p class="form__sub-title">Будь ласка, введіть корректно ваші данні</p>
+                    <div class="form__wrapper">
+                    
+                        <div class="form__group">
+                            <div class="form__item">
+                                <input type="text" id="name" name="Ім'я:" class="form__input input-form" placeholder="Ваше ім'я:">
+                            </div>
+                            <div class="form__item">
+                                <input type="tel" id="phone" name="Телефон:" class="form__input input-form" placeholder="Ваш телефон:">
+                            </div>
+                            <div class="form__item">
+                                <input type="email" id="email" name="E-mail" class="form__input input-form" placeholder="Електронна пошта:">
+                            </div>
+                        </div>
+                        <div class="policy__check">
+                            <input type="checkbox" id="policy_about" name="interest" value="policy" />
+                            <label for="policy_about">Я погоджуюсь з правилами <a href="#" target="_blank">політики конфіденційності</a></label>
+                        </div>
+
+                        <button type="submit" class="submit yelow_btns">Замовити захист</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div><!-- End popup -->
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- <script src="js/aos.js"></script> -->
+    <script src="js/script.js"></script>
+    <script src="js/popups.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script>
+        $(".gallery").magnificPopup({
+            delegate: "a",
+                type : 'image',
+                gallery : {
+                enabled : true
+            }
+            });
+    </script>
+    <script>
+     document.addEventListener('DOMContentLoaded', function () {
+        let carrentMenuLink = document.querySelector('.carrent-menu__link');
+
+        carrentMenuLink.addEventListener('click', function () {
+            // Переключаем класс "clicked" для изменения стилей
+            this.classList.toggle('clicked');
+        });
+    });
+</script>
+
+</body>
+</html>

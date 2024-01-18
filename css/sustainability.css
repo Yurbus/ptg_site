@@ -91,10 +91,6 @@ body.lock {
   align-items: center;
 }
 
-.header__logo {
-  max-width: 86px;
-}
-
 .header__menu {
   display: flex;
   align-items: center;
@@ -339,4 +335,4 @@ body.lock {
   .header__button {
     display: none;
   }
-}/*# sourceMappingURL=about.css.map */
+}/*# sourceMappingURL=sustainability.css.map */
