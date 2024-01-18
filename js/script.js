@@ -32,7 +32,6 @@ const isMobile = {
 // })
 
 
-
 // Меню бурнер
 const iconMenu = document.querySelector('.menu__icon');
 const menuBody = document.querySelector('.header__menu');

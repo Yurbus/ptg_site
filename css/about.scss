@@ -310,13 +310,14 @@ body.lock {
 	margin-bottom: 44px;
 }
 .choose__slider {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	gap: 20px;
+	min-width: 0;
+	margin-left: 10%;
+	position: relative;
 }
 .slider__item {
 	img {
 		margin-bottom: 20px;
+		border-radius: 8px;
 	}
 	h3 {
 		font-family: "Lao MN";
@@ -333,8 +334,59 @@ body.lock {
 		line-height: 140%;
 	}
 }
+.swiper {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	padding-bottom: 80px;
+}
 
+.swiper-slide {
+	font-size: 18px;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
+.swiper-slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.swiper-slide-active {
+	width: 30%;
+	.slider__item {
+		background: #0060FF;
+		padding: 10px;
+		border-radius: 12px;
+		color: #fff;
+	}
+}
+.swiper-pagination {
+
+}
+.swiper-button-next, .swiper-button-prev {
+	top: 97%;
+}
+.swiper-button-prev {
+	position: absolute;
+	width: 43px;
+	left: 35%;
+}
+.swiper-button-next {
+	position: absolute;
+	width: 43px;
+	right: 35%;
+}
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+    content: '';
+}
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+    content: '';
+}
 /*------------  -----------------------------------*/
 
 
@@ -361,6 +413,14 @@ body.lock {
 /*============================ Media queries ==============================================*/
 /*=========================================================================================*/
 /*=========================================================================================*/
+
+@media screen and (max-width:992.98px) {
+	.choose__slider {
+		margin-left: 60px;
+	}
+}
+
+
 @media screen and (max-width:959.98px) {
 	// .header__menu {
 	// 	visibility: hidden;
@@ -485,6 +545,9 @@ body.lock {
 	.title__h1 {
 		font-size: 32px;
 	}
+	.title__h2 {
+		font-size: 24px;
+	}
 	.hero__text {
 		font-size: 12px;
 	}
@@ -500,6 +563,15 @@ body.lock {
 				}
 			}
 		}
+	}
+	.swiper-button-next, .swiper-button-prev {
+		top: 96.5%;
+	}
+	.swiper-button-prev {
+		left: 5%;
+	}
+	.swiper-button-next {
+		right: 5%;
 	}
 }
 
@@ -517,10 +589,20 @@ body.lock {
 
 }
 
-@media screen and (max-width:479.98px) {
-
-
-
+@media screen and (max-width:480.98px) {
+	.choose__slider {
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+	.slider__item {
+		h3 {
+			font-size: 18px;
+		}
+		p {
+			font-size: 12px;
+		}
+	
+	}
 }
 
 @media screen and (max-width: 414.98px){
