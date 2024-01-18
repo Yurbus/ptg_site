@@ -223,12 +223,6 @@ body.lock {
 
 /*------------ main__section style ------------------------------*/
 
-.section__hero {
-
-}
-.hero__body {
-
-}
 .hero__title {
 	margin-top: 160px;
 	text-align: center;
@@ -387,7 +381,52 @@ body.lock {
 .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
     content: '';
 }
-/*------------  -----------------------------------*/
+
+
+/*------------ Mission -----------------------------------*/
+.section__mission {
+}
+.mission__body {
+	padding-bottom: 60px;
+}
+.mission_content {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	margin-top: 100px;
+}
+.mission__text {
+	margin-right: 100px;
+	h3 {
+		font-family: "Lao MN";
+		font-size: 44px;
+		font-style: normal;
+		font-weight: 250;
+		line-height: normal;
+		margin-bottom: 12px;
+	}
+	p {
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 140%;
+	}
+}
+.mission__image {
+	width: 100%;
+	img {
+		border-radius: 12px;
+		object-fit: cover;
+	}
+}
+.mission_content-reverse {
+	.mission__text {
+		margin-right: 0;
+		margin-left: 100px;
+	}
+}
+
+
 
 
 
@@ -418,6 +457,17 @@ body.lock {
 	.choose__slider {
 		margin-left: 60px;
 	}
+	.mission_content {
+		.mission__text {
+			margin-right: 30px;
+		}
+	}
+	.mission_content-reverse {
+		.mission__text {
+			margin-left: 30px;
+		}
+	}
+	
 }
 
 
@@ -572,6 +622,25 @@ body.lock {
 	}
 	.swiper-button-next {
 		right: 5%;
+	}
+	.mission_content {
+		grid-template-columns: 1fr;
+		.mission__text {
+			margin-right: 0;
+			margin-left: 0;
+			h3 {
+				font-size: 24px;
+			}
+			p {
+				font-size: 12px;
+				margin-bottom: 24px;
+			}
+		}
+	}
+	.mission_content-reverse {
+		display: flex;
+		flex-direction: column-reverse;
+		margin-top: 60px;
 	}
 }
 
