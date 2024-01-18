@@ -478,27 +478,31 @@ body.lock {
 			line-height: 140%; 
 			margin-bottom: 10px;
 		}
-		a {
-			color: #FFF;
-			text-align: center;
-			font-size: 14px;
-			font-style: normal;
-			font-weight: 700;
-			line-height: normal;
-			border-radius: 64px;
-			border: 1px solid #0060FF;
-			background: #0060FF;
-			padding: 14px 54px;
-			margin-top: 20px;
-			display: inline-flex;
-			transition: all 0.3s ease 0s;
-			&:hover {
-				background: transparent;
-				color: #0060FF;
+		.button__partner {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			a {
+				color: #FFF;
+				text-align: center;
+				font-size: 14px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: normal;
+				border-radius: 64px;
+				border: 1px solid #0060FF;
+				background: #0060FF;
+				padding: 14px 54px;
+				margin-top: 20px;
+				display: inline-flex;
+				transition: all 0.3s ease 0s;
+				&:hover {
+					background: transparent;
+					color: #0060FF;
+				}
 			}
 		}
-	}
-	.partner__btn {
+		
 	}
 	.partner__image {
 	}
@@ -634,23 +638,25 @@ body.lock {
 			line-height: 140%; 
 			margin-bottom: 12px;
 		}
-		.tab__btn {
-			color: #FFF;
-			text-align: center;
-			font-size: 14px;
-			font-style: normal;
-			font-weight: 700;
-			line-height: normal;
-			border-radius: 64px;
-			border: 1px solid #0060FF;
-			background: #0060FF;
-			padding: 14px 54px;
-			margin-top: 20px;
-			display: inline-flex;
-			transition: all 0.3s ease 0s;
-			&:hover {
-				background: transparent;
-				color: #0060FF;
+		.button_tab {
+			.tab__btn {
+				color: #FFF;
+				text-align: center;
+				font-size: 14px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: normal;
+				border-radius: 64px;
+				border: 1px solid #0060FF;
+				background: #0060FF;
+				padding: 14px 54px;
+				margin-top: 20px;
+				display: inline-flex;
+				transition: all 0.3s ease 0s;
+				&:hover {
+					background: transparent;
+					color: #0060FF;
+				}
 			}
 		}
 	}
@@ -1004,6 +1010,10 @@ body.lock {
 			p {
 				font-size: 14px;
 			}
+			.button_tab {
+				display: flex;
+				justify-content: center;
+			}
 		}
 	}
 	.advantages__title-block {
@@ -1069,9 +1079,11 @@ body.lock {
 	.slider__item {
 		h3 {
 			font-size: 18px;
+			padding: 0 16px;
 		}
 		p {
 			font-size: 12px;
+			padding: 0 16px 24px;
 		}
 	}
 	.partner__body {

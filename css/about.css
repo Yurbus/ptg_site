@@ -470,7 +470,12 @@ body.lock {
   line-height: 140%;
   margin-bottom: 10px;
 }
-.partner__body .partner__descr a {
+.partner__body .partner__descr .button__partner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.partner__body .partner__descr .button__partner a {
   color: #FFF;
   text-align: center;
   font-size: 14px;
@@ -485,7 +490,7 @@ body.lock {
   display: inline-flex;
   transition: all 0.3s ease 0s;
 }
-.partner__body .partner__descr a:hover {
+.partner__body .partner__descr .button__partner a:hover {
   background: transparent;
   color: #0060FF;
 }
@@ -613,7 +618,7 @@ body.lock {
   line-height: 140%;
   margin-bottom: 12px;
 }
-.tabContent-in .tabContent__text .tab__btn {
+.tabContent-in .tabContent__text .button_tab .tab__btn {
   color: #FFF;
   text-align: center;
   font-size: 14px;
@@ -628,7 +633,7 @@ body.lock {
   display: inline-flex;
   transition: all 0.3s ease 0s;
 }
-.tabContent-in .tabContent__text .tab__btn:hover {
+.tabContent-in .tabContent__text .button_tab .tab__btn:hover {
   background: transparent;
   color: #0060FF;
 }
@@ -938,6 +943,10 @@ body.lock {
   .tabContent-in .tabContent__text p {
     font-size: 14px;
   }
+  .tabContent-in .tabContent__text .button_tab {
+    display: flex;
+    justify-content: center;
+  }
   .advantages__title-block .advantages__sub-title {
     font-size: 20px;
     margin-bottom: 10px;
@@ -982,9 +991,11 @@ body.lock {
   }
   .slider__item h3 {
     font-size: 18px;
+    padding: 0 16px;
   }
   .slider__item p {
     font-size: 12px;
+    padding: 0 16px 24px;
   }
   .partner__body .partner__title-block .partner__text {
     font-size: 12px;
