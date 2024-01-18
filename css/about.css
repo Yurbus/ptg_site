@@ -680,7 +680,7 @@ body.lock {
 .advantages__item img {
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 8px;
+  border-radius: 8px 8px 0 0;
 }
 .advantages__item h4 {
   font-family: "Lao MN";
