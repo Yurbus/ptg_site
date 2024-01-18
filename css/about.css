@@ -83,6 +83,7 @@ body.lock {
   width: 100%;
   left: 0;
   top: 0;
+  background: #fff;
 }
 
 .header__body {
@@ -165,14 +166,17 @@ body.lock {
 .header__menu .menu__list .carrent-menu__link .sub-menu__List {
   position: absolute;
   margin-top: 45px;
+  width: 100%;
+  text-align: left;
+  padding: 20px 15px;
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.5s ease, transform 0.5s ease;
   transform-origin: top center;
   background-color: #fff;
 }
-.header__menu .menu__list .carrent-menu__link .sub-menu__List .sub-menu__link {
-  margin-bottom: 15px;
+.header__menu .menu__list .carrent-menu__link .sub-menu__List .sub-menu__link:not(:last-child) {
+  margin-bottom: 20px;
 }
 .header__menu .menu__list .carrent-menu__link img {
   transition: transform 0.5s ease; /* добавляем анимацию поворота для изображения */
@@ -213,8 +217,60 @@ body.lock {
 /*------------ Main style ---------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------*/
 /*------------ main__section style ------------------------------*/
+.hero__title {
+  margin-top: 160px;
+  text-align: center;
+}
+
+.title__h1 {
+  font-family: "Lao MN";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.hero__text {
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  max-width: 1026px;
+  margin: 0 auto 44px;
+}
+
+.hero__content .hero__image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 12px;
+}
+.hero__content .hero__block-text {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 17px;
+}
+.hero__content .hero__block-text .text__block h3 {
+  font-family: "Lao MN";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 250;
+  line-height: normal;
+  margin-bottom: 24px;
+}
+.hero__content .hero__block-text .text__block p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  margin-bottom: 10px;
+}
+
 /*------------ -------------------------------------*/
-/*------------  ----------------------------*/
+/*------------  -----------------------------------*/
 /*----------------------------------------------------------------------------------------*/
 /*------------ Footer style --------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------*/
@@ -299,12 +355,16 @@ body.lock {
     align-items: center;
     flex-direction: column;
     width: 100%;
-    margin-top: 350px;
     visibility: hidden;
     opacity: 0;
     transition: all 0.3s ease 0s;
     transform: translate(100%);
     border: none;
+    border-radius: 0;
+    background: #fff;
+    height: 100vh;
+    left: 0;
+    top: 0;
   }
   .header__menu .menu__list {
     display: flex;
@@ -317,9 +377,7 @@ body.lock {
     font-size: 18px;
   }
   .header__menu .menu__list .carrent-menu__link .sub-menu__List {
-    width: 100%;
     text-align: center;
-    padding: 20px;
     z-index: 10;
     margin-top: 30px;
   }
@@ -338,5 +396,30 @@ body.lock {
   }
   .header__button {
     display: none;
+  }
+}
+@media screen and (max-width: 768.98px) {
+  .title__h1 {
+    font-size: 32px;
+  }
+  .hero__text {
+    font-size: 12px;
+  }
+  .hero__content .hero__block-text {
+    margin-top: 20px;
+  }
+  .hero__content .hero__block-text .text__block h3 {
+    font-size: 18px;
+  }
+  .hero__content .hero__block-text .text__block p {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 559.98px) {
+  .hero__content .hero__block-text {
+    grid-template-columns: 1fr;
+  }
+  .hero__image img {
+    height: 180px;
   }
 }/*# sourceMappingURL=about.css.map */
