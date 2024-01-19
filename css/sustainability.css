@@ -83,6 +83,7 @@ body.lock {
   width: 100%;
   left: 0;
   top: 0;
+  background: #fff;
 }
 
 .header__body {
@@ -166,6 +167,8 @@ body.lock {
   transition: opacity 0.5s ease, transform 0.5s ease;
   transform-origin: top center;
   background-color: #fff;
+  padding: 20px 15px;
+  width: 100%;
 }
 .header__menu .menu__list .carrent-menu__link .sub-menu__List .sub-menu__link {
   margin-bottom: 15px;
@@ -208,9 +211,264 @@ body.lock {
 /*---------------------------------------------------------------------------------------*/
 /*------------ Main style ---------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------*/
-/*------------ main__section style ------------------------------*/
-/*------------ -------------------------------------*/
-/*------------  ----------------------------*/
+.title__h1 {
+  font-family: "Lao MN";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.title__h2 {
+  font-family: "Lao MN";
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 250;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+/*------------ sustainability ------------------------------*/
+.section__sustainability {
+  margin-top: 160px;
+  padding-bottom: 50px;
+}
+
+.sustainability__body .sustainability__title-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sustainability__body .sustainability__title {
+  text-align: center;
+  max-width: 810px;
+}
+.sustainability__body .sustainability__text {
+  text-align: center;
+  max-width: 845px;
+  margin-bottom: 44px;
+}
+.sustainability__body .sustainability__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sustainability__body .sustainability__content img {
+  border-radius: 12px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.sustainability__body .sustainability__content .content__text {
+  color: #FFF;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  padding: 18px 44px;
+  border-radius: 12px 12px 0px 0px;
+  background: rgba(0, 0, 0, 0.15);
+  -webkit-backdrop-filter: blur(60px);
+          backdrop-filter: blur(60px);
+  max-width: 914px;
+  margin-top: -92px;
+}
+
+/*------------ Corrugated Cardboard -----------------------------------*/
+.corrugated__body {
+  padding-bottom: 60px;
+}
+
+.corrugated_content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin-top: 120px;
+}
+
+.corrugated__text {
+  margin-left: 100px;
+}
+.corrugated__text h3 {
+  font-family: "Lao MN";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 250;
+  line-height: normal;
+  margin-bottom: 12px;
+}
+.corrugated__text p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.corrugated__image {
+  width: 100%;
+}
+.corrugated__image img {
+  border-radius: 12px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.corrugated_content-reverse .corrugated__text {
+  margin-left: 0;
+  margin-right: 100px;
+}
+
+/*------------ sertificates -----------------------------------*/
+.section__sertificates {
+  margin-top: 120px;
+}
+
+.sertificates__body {
+  padding-bottom: 60px;
+}
+.sertificates__body .sertificates__title-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sertificates__body .sertificates__title-block .sertificates__title {
+  text-align: center;
+  margin-bottom: 6px;
+  max-width: 807px;
+}
+.sertificates__body .sertificates__title-block .sertificates__text {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 20px;
+  max-width: 845px;
+  text-align: center;
+}
+.sertificates__body .sertificates__gallery {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 15px;
+  margin-top: 44px;
+}
+.sertificates__body .sertificates__gallery a {
+  margin: 10px;
+}
+
+/*------------ Contacts -----------------------------------*/
+.section__contacts {
+  margin-top: 60px;
+}
+
+.contacts__title-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 44px;
+}
+.contacts__title-block .contacts__title {
+  text-align: center;
+}
+.contacts__title-block .contacts__text {
+  text-align: center;
+}
+
+.contacts__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 120px;
+  padding-bottom: 50px;
+  margin-top: 80px;
+}
+.contacts__content .content__address {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+.contacts__content .address__list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+}
+.contacts__content .address__list li img {
+  width: 48px;
+  height: 48px;
+  margin-right: 22px;
+}
+.contacts__content .address__list li a {
+  font-family: "Lao MN";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 250;
+  line-height: normal;
+}
+.contacts__content .map {
+  width: 100%;
+  border-radius: 6px;
+}
+.contacts__content .map iframe {
+  width: 100%;
+  border-radius: 6px;
+}
+.contacts__content .content__form .form__contact {
+  display: flex;
+  flex-direction: column;
+}
+.contacts__content .content__form .form__contact h4 {
+  font-family: "Lao MN";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 250;
+  line-height: normal;
+  margin-bottom: 32px;
+}
+.contacts__content .content__form .form__contact .input__croup {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.contacts__content .content__form .form__contact textarea,
+.contacts__content .content__form .form__contact input {
+  color: #000;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 8px;
+  background: #F6F6F6;
+  padding: 25px 18px;
+  border: none;
+  margin-bottom: 12px;
+}
+.contacts__content .content__form .form__contact .bottom__action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contacts__content .content__form .form__contact .bottom__action .contact__btn {
+  color: #FFF;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border-radius: 64px;
+  border: 1px solid #0060FF;
+  background: #0060FF;
+  padding: 14px 54px;
+  margin-top: 20px;
+  display: inline-flex;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+.contacts__content .content__form .form__contact .bottom__action .contact__btn:hover {
+  background: transparent;
+  color: #0060FF;
+}
+
 /*----------------------------------------------------------------------------------------*/
 /*------------ Footer style --------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------*/
@@ -231,6 +489,40 @@ body.lock {
 /*============================ Media queries ==============================================*/
 /*=========================================================================================*/
 /*=========================================================================================*/
+@media screen and (max-width: 1280.98px) {
+  .contacts__content {
+    gap: 40px;
+  }
+}
+@media screen and (max-width: 992.98px) {
+  .corrugated_content .corrugated__text {
+    margin-left: 30px;
+  }
+  .corrugated_content-reverse .corrugated__text {
+    margin-right: 0;
+  }
+  .sertificates__body .sertificates__gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .contacts__content .address__list li {
+    margin-bottom: 22px;
+  }
+  .contacts__content .address__list li img {
+    width: 34px;
+    height: 34px;
+    margin-right: 12px;
+  }
+  .contacts__content .address__list li a {
+    font-size: 16px;
+  }
+  .contacts__content .content__form .form__contact h4 {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+  .contacts__content .content__form .form__contact input {
+    padding: 20px 18px;
+  }
+}
 @media screen and (max-width: 959.98px) {
   /*-------- Mobile menu style ---------*/
   .menu__icon {
@@ -295,12 +587,16 @@ body.lock {
     align-items: center;
     flex-direction: column;
     width: 100%;
-    margin-top: 350px;
     visibility: hidden;
     opacity: 0;
     transition: all 0.3s ease 0s;
     transform: translate(100%);
     border: none;
+    border-radius: 0;
+    background: #fff;
+    height: 100vh;
+    left: 0;
+    top: 0;
   }
   .header__menu .menu__list {
     display: flex;
@@ -334,5 +630,78 @@ body.lock {
   }
   .header__button {
     display: none;
+  }
+  .sustainability__body .sustainability__content img {
+    height: 200px;
+  }
+  .sustainability__body .sustainability__content .content__text {
+    font-size: 12px;
+    margin-top: -70px;
+    border-radius: 12px;
+    max-width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+  }
+}
+@media screen and (max-width: 859.98px) {
+  .contacts__content {
+    grid-template-columns: 1fr;
+  }
+  .contacts__content .content__form .form__contact {
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 768.98px) {
+  .title__h1 {
+    font-size: 34px;
+  }
+  .corrugated_content {
+    grid-template-columns: 1fr;
+  }
+  .corrugated_content .corrugated__text {
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 24px;
+  }
+  .corrugated_content .corrugated__text h3 {
+    font-size: 24px;
+  }
+  .corrugated_content .corrugated__text p {
+    font-size: 12px;
+    margin-bottom: 24px;
+  }
+  .corrugated_content-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 60px;
+  }
+}
+@media screen and (max-width: 559.98px) {
+  .sertificates__body .sertificates__gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 479.98px) {
+  .section__sertificates {
+    margin-top: 60px;
+  }
+}
+@media screen and (max-width: 414.98px) {
+  .title__h2 {
+    font-size: 34px;
+  }
+  .sertificates__body .sertificates__title-block .sertificates__text {
+    font-size: 12px;
+    margin-bottom: 16px;
+  }
+  .sertificates__body .sertificates__gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .contacts__content .content__form .form__contact .input__croup {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .contacts__content .content__form .form__contact .bottom__action {
+    flex-direction: column;
   }
 }/*# sourceMappingURL=sustainability.css.map */

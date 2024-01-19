@@ -82,7 +82,7 @@
 		font-size: 14px;
 		font-weight: 300;
 		a {
-			color: #FFE30F;
+			color: #0060FF;
 			text-decoration: underline;
 		}
 	}
@@ -94,8 +94,8 @@
 		display: inline-flex;
 		align-items: center;
 		justify-content: center;
-		border-radius: 1px;
-		border: 1px solid #FFE30F;
+		border-radius: 2px;
+		border: 1px solid #000;
 		margin: -2px 20px 0 0;
 		height: 24px;
 		width: 24px;
@@ -104,7 +104,7 @@
 		transition: color ease .3s;
 	}
 	input[type=checkbox]:checked + label:before {
-		background: #FFE30F;
+		background: #fff;
 		content: url(../img/check.svg);
 	}
 }
