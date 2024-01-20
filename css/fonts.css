@@ -1,5 +1,5 @@
 
-@font-face {
+/* @font-face {
     font-family: 'lao-mn-bold';
     src: url('../fonts/lao-mn-bold.eot');
     src: local('../fonts/lao-mn-bold'),
@@ -14,4 +14,18 @@
         url('../fonts/lao-mn.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
-}
+} */
+@font-face{
+    font-family:"Lao MN";
+    src:url("../fonts/LaoMN-Bold.woff2") format("woff2"),
+    url("../fonts/LaoMN-Bold.woff") format("woff");
+    font-weight:bold;
+    font-style:normal;
+    font-display:swap}
+@font-face{
+    font-family:"Lao MN";
+    src:url("../fonts/LaoMN.woff2") format("woff2"),
+    url("../fonts/LaoMN.woff") format("woff");
+    font-weight:normal;
+    font-style:normal;
+    font-display:swap}

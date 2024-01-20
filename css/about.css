@@ -473,7 +473,7 @@ body.lock {
 .partner__body .partner__descr .button__partner {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
 }
 .partner__body .partner__descr .button__partner a {
   color: #FFF;
@@ -879,7 +879,7 @@ body.lock {
     font-size: 24px;
   }
   .hero__text {
-    font-size: 12px;
+    font-size: 14px;
   }
   .hero__content .hero__block-text {
     margin-top: 20px;
@@ -888,7 +888,7 @@ body.lock {
     font-size: 18px;
   }
   .hero__content .hero__block-text .text__block p {
-    font-size: 12px;
+    font-size: 14px;
   }
   .swiper-button-next, .swiper-button-prev {
     top: 96.5%;
@@ -910,7 +910,7 @@ body.lock {
     font-size: 24px;
   }
   .mission_content .mission__text p {
-    font-size: 12px;
+    font-size: 14px;
     margin-bottom: 24px;
   }
   .mission_content-reverse {
@@ -923,6 +923,12 @@ body.lock {
   }
   .partner__body .partner__image {
     margin-top: 20px;
+  }
+  .partner__body .partner__descr {
+    margin-right: 0;
+  }
+  .partner__body .partner__descr .button__partner {
+    align-items: center;
   }
   .tabContent-in {
     grid-template-columns: 1fr;
@@ -938,7 +944,7 @@ body.lock {
   }
   .tabContent-in .tabContent__text h4 {
     font-size: 24px;
-    margin-bottom: 12px;
+    margin-bottom: 14px;
   }
   .tabContent-in .tabContent__text p {
     font-size: 14px;
@@ -958,10 +964,10 @@ body.lock {
     font-size: 20px;
   }
   .advantages__item p {
-    font-size: 12px;
+    font-size: 14px;
   }
   .advantages__bottom-text span {
-    font-size: 13px;
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 559.98px) {
