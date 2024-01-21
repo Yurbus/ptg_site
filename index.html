@@ -75,7 +75,7 @@
 						</ul>
 					</div>
 
-					<div class="head__images">
+					<div class="head__images-desc">
 						<img class="" src="img/product/parraccio.png" alt="">
 						<img class="" src="img/product/nesqwick.png" alt="">
 						<img class="" src="img/product/bg-2.png" alt="">
@@ -93,6 +93,11 @@
 		</section>
 		<section class="our-prods">
 			<div class="container">
+				<ul class="head__list head__list-mob">
+					<li> <span id="years_mob">0</span> years of serving customers </li>
+					<li> <span id="partners_mob">0</span> reliable partners </li>
+					<li> <span id="countries_mob">0</span> countries with satisfied customers</li>
+				</ul>
 				<div class="our-prods__wrap">
 					<div class="our-prods__col">
 						<div class="content">
@@ -243,8 +248,8 @@
     <script>
 		if ($('.head').length) {
 			function nextSlide() {
-				let $active = $('.head__images img.active');
-				let $next = $active.next().length ? $active.next() : $('.head__images img:first');
+				let $active = $('.head__images-desc img.active');
+				let $next = $active.next().length ? $active.next() : $('.head__images-desc img:first');
 				$active.removeClass('active');
 				$next.addClass('active');
 			}
