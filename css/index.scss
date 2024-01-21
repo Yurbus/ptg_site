@@ -487,11 +487,11 @@ img{
 
 /*------------ and header --------------------*/
 .head{
-	margin-bottom:100px;
 	position:relative;
 	overflow:hidden;
-	background-image: url('../img/main_background.png') no-repeat;
+	background: url('../img/main_background.png') center / cover no-repeat;
 	padding-bottom: 60px;
+	margin-bottom:100px;
 }
 @media(max-width: 768px){
 	.head{
@@ -1219,9 +1219,6 @@ img{
 				margin-top: 30px;
 			}
 		}
-	}
-	.head{
-		background-image: url('../img/main_background.png') no-repeat;
 	}
 }
 
