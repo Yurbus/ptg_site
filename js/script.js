@@ -92,19 +92,6 @@ $(document).ready(function () {
 });
 
 
-function startCountAnimationMob() {
-    animateCount($('#years_mob'), 22, 2000); // Adjust duration as needed
-    animateCount($('#partners_mob'), 15, 2000);
-    animateCount($('#countries_mob'), 14, 2000);
-}
-
-// Trigger the counting animation when the document is ready
-$(document).ready(function () {
-    startCountAnimationMob();
-});
-
-
-
 // Прокрутка при клике
 // const menuLinks = document.querySelectorAll('.menu__link[data-goto]');
 // if(menuLinks.length > 0) {

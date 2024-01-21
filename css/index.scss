@@ -662,7 +662,6 @@ img{
 			}
 			li:last-child {
 				margin-left: 40px;
-				margin-top: 30px;
 				width: 100%;
 			}
 		}
@@ -1222,6 +1221,13 @@ img{
 	}
 	.head__description {
 		margin-top: 340px;
+	}
+	.our-prods {
+		.head__list-mob {
+			li:last-child {
+				margin-top: 30px;
+			}
+		}
 	}
 }
 

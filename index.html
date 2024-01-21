@@ -264,6 +264,42 @@
 		setInterval(nextSlide2, 2000);
 	}
     </script>
+	<script>
+		function animateCount(element, targetValue, duration) {
+			$({ count: parseInt(element.text()) }).animate({ count: targetValue }, {
+				duration: duration,
+				step: function () {
+					element.text(Math.floor(this.count));
+				},
+				complete: function () {
+					element.text(targetValue);
+				}
+			});
+		}
+	
+		function startCountAnimationMob() {
+			// Create an Intersection Observer
+			var observer = new IntersectionObserver(function(entries, observer) {
+				entries.forEach(function(entry) {
+					if (entry.isIntersecting) {
+						// If the element is in the viewport, start the animation
+						animateCount($('#years_mob'), 22, 2000); // Adjust duration as needed
+						animateCount($('#partners_mob'), 15, 2000);
+						animateCount($('#countries_mob'), 14, 2000);
+						observer.unobserve(entry.target); // Stop observing once animation starts
+					}
+				});
+			}, { threshold: 0.5 });
+	
+			// Observe the element you want to animate
+			observer.observe(document.querySelector('.head__list-mob'));
+		}
+	
+		// Trigger the counting animation when the document is ready
+		$(document).ready(function () {
+			startCountAnimationMob();
+		});
+	</script>
 
 
     <!-- <script type="text/javascript" src="https://test.trainer.dp.ua/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
