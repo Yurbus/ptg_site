@@ -67,16 +67,28 @@ window.addEventListener('scroll', function() {
 
 
 // Прокрутка чисел на странице 
-$('.skills__item').each(function () {
-    $(this).prop('Counter',0).animate({
-        Counter:$(this).text()
-    },{
-        duration: 4000,
-        easing: 'swing',
-        step: function(now){
-            $(this).text(Math.ceil(now));
+
+function animateCount(element, targetValue, duration) {
+    $({ count: parseInt(element.text()) }).animate({ count: targetValue }, {
+        duration: duration,
+        step: function () {
+            element.text(Math.floor(this.count));
+        },
+        complete: function () {
+            element.text(targetValue);
         }
     });
+}
+
+function startCountAnimation() {
+    animateCount($('#years'), 22, 2000); // Adjust duration as needed
+    animateCount($('#partners'), 15, 2000);
+    animateCount($('#countries'), 14, 2000);
+}
+
+// Trigger the counting animation when the document is ready
+$(document).ready(function () {
+    startCountAnimation();
 });
 
 

@@ -1,10 +1,15 @@
 var $ = jQuery;
 
 $(document).ready(function () {
-    var heroSwiper = new Swiper(".js-hero", {
-        loop: true,
-        autoHeight: true,
-    });
+    // var heroSwiper = new Swiper(".js-hero", {
+    //     autoHeight: true,
+    //     effect: "fade",
+    //     loop: false,
+    //     autoplay: {
+    //         delay: 2500,
+    //         disableOnInteraction: false,
+    //     },
+    // });
 
     var partnersSwiper = new Swiper(".js-partners", {
         slidesPerView: 2,

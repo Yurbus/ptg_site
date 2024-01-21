@@ -4,12 +4,12 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" type="image/x-icon" href="https://test.trainer.dp.ua/wp-content/themes/paper-trading/img/logo.jpeg">
+	<link rel="icon" type="image/x-icon" href="">
 	<title>Paper trading</title>
 	
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/popups.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
 
@@ -60,7 +60,7 @@
 			<div class="container">
 				
 				<div class="head__wrapper">
-					<div class="block__container">
+					<div class="block_container">
 						<h3 class="head__title"> PAPER TRADING GROUP </h3>
 						<div class="head__description">
 							<p>Since 2002, the Swiss-based Papertrading Group SA (PTG) has been ensuring that the<br /> customers all over Europe benefit from our knowledge and expertise in the paper and<br /> packaging market.</p>
@@ -74,15 +74,12 @@
 							<li> <span id="countries">0</span> countries with satisfied customers</li>
 						</ul>
 					</div>
-					<div class="swiper js-hero">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide" style="background-image: url(../img/circle.png); ">
-								<img src="img/product/parraccio.png" alt="">
-							</div>
-							<div class="swiper-slide" style="background-image: url(../img/circle.png); ">
-								<img src="img/product/parraccio.png" alt="">
-							</div>
-						</div>
+
+					<div class="head__images">
+						<img class="" src="img/product/parraccio.png" alt="">
+						<img class="" src="img/product/nesqwick.png" alt="">
+						<img class="" src="img/product/bg-2.png" alt="">
+						<img class="" src="img/product/bg_3.png" alt="">
 					</div>
 				</div> 
 				</div>
@@ -223,7 +220,6 @@
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 	<script src="js/script.js"></script>
     <script src="js/popups.js"></script>
-    <script src="js/swiper.js"></script>
 	<script src="js/sw_slider.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
 
@@ -237,30 +233,28 @@
 		   });
 	   });
    </script>
+
    <script>
-    function animateCount(element, targetValue, duration) {
-        $({ count: parseInt(element.text()) }).animate({ count: targetValue }, {
-            duration: duration,
-            step: function () {
-                element.text(Math.floor(this.count));
-            },
-            complete: function () {
-                element.text(targetValue);
-            }
-        });
+	if ($('.head').length) {
+    function nextSlide() {
+      let $active = $('.head__images img.active');
+      let $next = $active.next().length ? $active.next() : $('.head__images img:first');
+      $active.removeClass('active');
+      $next.addClass('active');
     }
+    // function nextSlide2() {
+	//   let $active = $('.head__images img.active');
+	//   let $next = $active.next().length ? $active.next() : $('.head__images img:first');
+    //   $active.removeClass('active');
+    //   $next.addClass('active');
+    // }
+  
+    setInterval(nextSlide, 2000);
+    setInterval(nextSlide2, 2000);
+  }
+   </script>
 
-    function startCountAnimation() {
-        animateCount($('#years'), 22, 2000); // Adjust duration as needed
-        animateCount($('#partners'), 15, 2000);
-        animateCount($('#countries'), 14, 2000);
-    }
 
-    // Trigger the counting animation when the document is ready
-    $(document).ready(function () {
-        startCountAnimation();
-    });
-</script>
     <!-- <script type="text/javascript" src="https://test.trainer.dp.ua/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
 	<script type="text/javascript" src="https://test.trainer.dp.ua/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
 
