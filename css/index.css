@@ -145,17 +145,16 @@ img {
   position: relative;
   display: flex;
   padding-top: 200px;
-  min-width: 0;
 }
 
 .head__images {
   position: absolute;
-  right: 0;
-  bottom: 0;
+  right: -50px;
+  bottom: -40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 37.34375vw;
+  max-width: 34.34375vw;
   height: 36.3020833333vw;
   width: 100%;
 }
@@ -171,6 +170,36 @@ img {
 }
 
 .head__images img.active {
+  opacity: 1;
+}
+
+.head__images-mobile {
+  display: none;
+}
+
+.head__images-mobile {
+  position: absolute;
+  left: 21%;
+  top: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 57.34375vw;
+  height: 67.302083vw;
+  width: 100%;
+}
+
+.head__images-mobile img {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.head__images-mobile img.active {
   opacity: 1;
 }
 
@@ -509,12 +538,12 @@ img {
   color: #fff;
   max-width: 700px;
   margin-bottom: 44px;
+  margin-top: 415px;
 }
 
 @media (max-width: 768px) {
   .head__description {
-    font-size: 12px;
-    margin-bottom: 194px;
+    font-size: 14px;
   }
 }
 .head__description p:last-child {
@@ -1054,6 +1083,11 @@ img {
 }
 
 /*------------------------------ Media query ---------------------------------------------*/
+@media screen and (max-width: 992.98px) {
+  .block_container {
+    max-width: 60%;
+  }
+}
 @media screen and (max-width: 959.98px) {
   /*-------- Mobile menu style ---------*/
   .menu__icon {
@@ -1167,6 +1201,29 @@ img {
   }
   .header__main .header__menu .menu__list .carrent-menu__link:hover {
     color: #000000;
+  }
+}
+@media screen and (max-width: 768.98px) {
+  .head__images {
+    display: none;
+  }
+  .head__images-mobile {
+    display: block;
+  }
+  .block_container {
+    max-width: 100%;
+  }
+  .head__wrapper {
+    padding-top: 130px;
+  }
+}
+@media screen and (max-width: 480.98px) {
+  .head__title {
+    font-size: 24px;
+    text-align: center;
+  }
+  .head__description {
+    margin-top: 340px;
   }
 }
 /*# sourceMappingURL=index.css.map */

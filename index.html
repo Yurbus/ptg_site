@@ -82,7 +82,13 @@
 						<img class="" src="img/product/bg_3.png" alt="">
 					</div>
 				</div> 
+				<div class="head__images-mobile">
+					<img class="" src="img/product/parraccio.png" alt="">
+					<img class="" src="img/product/nesqwick.png" alt="">
+					<img class="" src="img/product/bg-2.png" alt="">
+					<img class="" src="img/product/bg_3.png" alt="">
 				</div>
+			</div>
 	
 		</section>
 		<section class="our-prods">
@@ -234,25 +240,25 @@
 	   });
    </script>
 
-   <script>
-	if ($('.head').length) {
-    function nextSlide() {
-      let $active = $('.head__images img.active');
-      let $next = $active.next().length ? $active.next() : $('.head__images img:first');
-      $active.removeClass('active');
-      $next.addClass('active');
-    }
-    // function nextSlide2() {
-	//   let $active = $('.head__images img.active');
-	//   let $next = $active.next().length ? $active.next() : $('.head__images img:first');
-    //   $active.removeClass('active');
-    //   $next.addClass('active');
-    // }
-  
-    setInterval(nextSlide, 2000);
-    setInterval(nextSlide2, 2000);
-  }
-   </script>
+    <script>
+		if ($('.head').length) {
+			function nextSlide() {
+				let $active = $('.head__images img.active');
+				let $next = $active.next().length ? $active.next() : $('.head__images img:first');
+				$active.removeClass('active');
+				$next.addClass('active');
+			}
+			function nextSlide2() {
+				let $active = $('.head__images-mobile img.active');
+				let $next = $active.next().length ? $active.next() : $('.head__images-mobile img:first');
+				$active.removeClass('active');
+				$next.addClass('active');
+			}
+	
+		setInterval(nextSlide, 2000);
+		setInterval(nextSlide2, 2000);
+	}
+    </script>
 
 
     <!-- <script type="text/javascript" src="https://test.trainer.dp.ua/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
