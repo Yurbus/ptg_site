@@ -719,6 +719,63 @@ body.lock {
   line-height: normal;
 }
 
+/*------------ Find us -----------------------------------*/
+.section__findus {
+  margin-bottom: 50px;
+  margin-top: 100px;
+}
+
+.findus__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.findus__content .findus__left {
+  margin-right: 60px;
+}
+.findus__content .findus__left .findus__title {
+  font-family: "Lao MN";
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.findus__content .findus__left p {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  margin-bottom: 18px;
+}
+.findus__content .findus__right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.findus__content .findus__right .findus__image h4 {
+  font-family: "Lao MN";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 14px;
+}
+.findus__content .findus__right .findus__image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 12px;
+}
+.findus__content .findus__right .findus__image span {
+  font-family: "Lao MN";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 14px;
+}
+
 /*----------------------------------------------------------------------------------------*/
 /*------------ Footer style --------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------*/
@@ -870,6 +927,18 @@ body.lock {
     max-width: 100%;
     background: rgba(0, 0, 0, 0.3);
   }
+  .findus__content .findus__right {
+    grid-template-columns: 1fr;
+  }
+  .findus__content .findus__right .findus__image img {
+    height: 160px;
+  }
+  .findus__content .findus__left {
+    margin-right: 0;
+  }
+  .findus__content .findus__left .findus__title {
+    font-size: 32px;
+  }
 }
 @media screen and (max-width: 768.98px) {
   .title__h1 {
@@ -969,6 +1038,16 @@ body.lock {
   .advantages__bottom-text span {
     font-size: 14px;
   }
+  .section__findus {
+    margin-top: 70px;
+  }
+  .findus__content {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .findus__content .findus__right {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 @media screen and (max-width: 559.98px) {
   .hero__content .hero__block-text {
@@ -1018,5 +1097,8 @@ body.lock {
   }
   .tabContent-in .tabContent__img img {
     height: 290px;
+  }
+  .findus__content .findus__right {
+    grid-template-columns: 1fr;
   }
 }/*# sourceMappingURL=about.css.map */

@@ -743,7 +743,66 @@ body.lock {
 	}
 }
 
+/*------------ Find us -----------------------------------*/
+.section__findus {
+	margin-bottom: 50px;
+	margin-top: 100px;
+}
+.findus__body {
+}
+.findus__content {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 30px;
+	.findus__left {
+		margin-right: 60px;
+		.findus__title {
+			font-family: "Lao MN";
+			font-size: 44px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+			text-transform: uppercase;
+			margin-bottom: 12px;
+		} 
+		p {
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 140%;
+			margin-bottom: 18px;
+		}
+	}
+	.findus__right {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 20px;
+		.findus__image {
+			h4 {
+				font-family: "Lao MN";
+				font-size: 24px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: normal;
+				margin-bottom: 14px;
+			}
+			img {
+				object-fit: cover;
+				border-radius: 12px;
+			}
+			span {
+				font-family: "Lao MN";
+				font-size: 16px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: normal;
+				margin-top: 14px;
+			}
+		}
+	}
+	
 
+}
 
 
 
@@ -926,6 +985,22 @@ body.lock {
 			}
 		}
 	}
+	.findus__content {
+		.findus__right {
+			grid-template-columns: 1fr;
+			.findus__image img {
+				height: 160px;
+			}
+		}
+		.findus__left {
+			margin-right: 0;
+			.findus__title {
+				font-size: 32px;
+			}
+		}
+	}
+
+
 }
 
 @media screen and (max-width:768.98px) {
@@ -1041,6 +1116,17 @@ body.lock {
 	.advantages__bottom-text span {
 		font-size: 14px;
 	}
+	.section__findus {
+		margin-top: 70px;
+	}
+	.findus__content {
+		grid-template-columns: 1fr;
+		gap: 20px;
+		.findus__right {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+
 }
 
 
@@ -1112,6 +1198,9 @@ body.lock {
 	}
 	.tabContent-in .tabContent__img img {
 		height: 290px;
+	}
+	.findus__content .findus__right {
+		grid-template-columns: 1fr;
 	}
 }
 

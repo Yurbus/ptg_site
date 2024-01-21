@@ -139,9 +139,7 @@ img{
 	background:rgba(0,0,0,0)
 }
 
-.bg-head {
-	background-color: #0060FF;
-}
+
 
 .head__wrapper {
 	position: relative;
@@ -209,6 +207,9 @@ img{
 	font-size:48px;
 	line-height:normal
 }
+.content p {
+	line-height: 140%;
+}
 @media(max-width: 1100px){
 	.content h1,.content h2{
 		font-size:44px
@@ -250,7 +251,7 @@ img{
 .content h6{
 	font-weight:600;
 	line-height:140%;
-	margin-bottom:24px;
+	margin-bottom:12px;
 	font-size:16px;
 	margin-top: 12px;
 }
@@ -316,6 +317,15 @@ img{
 }
 
 /*-----------------  header -------------------------------------------------*/
+
+.bg-head {
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.2s ease 0s;
+
+}
+
+
 .header__main {
 	z-index: 10;
 	padding: 28px 0;
@@ -343,7 +353,6 @@ img{
 			display: flex;
 			margin-bottom: 0;
 			list-style: none;
-			// margin-right: 70px;
 			.arrow_mob {
 				display: none;
 			}
@@ -632,6 +641,9 @@ img{
 		}
 	}
 }
+.image_height {
+	height: 372px;
+}
 @media(max-width: 768px){
 	.our-prods {
 		.head__list {
@@ -694,8 +706,11 @@ img{
 	margin-left:auto;
 	display:flex
 }
+.our-prod-2 {
+	height: 180px;
+}
 .our-prods__col-4 p:nth-child(1){
-	margin-bottom:60px
+	margin-bottom:87px
 }
 @media(max-width: 768px){
 	.our-prods__col-4 p:nth-child(1){
@@ -873,6 +888,7 @@ img{
 }
 .sustainability__content p{
 	margin-bottom:12px;
+	line-height: 140%;
 }
 .sustainability__content p:last-child{
 	margin-bottom:0
