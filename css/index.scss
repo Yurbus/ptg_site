@@ -477,7 +477,8 @@ img{
 .head{
 	margin-bottom:100px;
 	position:relative;
-	overflow:hidden
+	overflow:hidden;
+	background-image: url('../img/main_background.png') no-repeat;
 }
 @media(max-width: 768px){
 	.head{
