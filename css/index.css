@@ -506,31 +506,6 @@ img {
   z-index: 5;
 }
 
-@media (max-width: 768px) {
-  .head .swiper {
-    position: relative;
-    z-index: 3;
-  }
-}
-.head .swiper-slide {
-  height: 100vh;
-  min-height: 650px;
-  position: relative;
-  z-index: 5;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-@media (max-width: 768px) {
-  .head .swiper-slide {
-    padding-top: 89px;
-    height: auto;
-    min-height: 1px;
-    padding-bottom: 32px;
-  }
-}
 .head__title {
   margin-bottom: 12px;
   font-family: "Lao MN", sans-serif;
@@ -1277,6 +1252,9 @@ img {
   }
   .our-prods .head__list-mob li:last-child {
     margin-top: 30px;
+  }
+  .head {
+    background-image: url("../img/main_background.png") no-repeat;
   }
 }
 /*# sourceMappingURL=index.css.map */
