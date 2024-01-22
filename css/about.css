@@ -100,7 +100,7 @@ body.lock {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #000;
+  border: 1px solid #CECECE;
   padding: 15px;
   border-radius: 40px;
 }
@@ -166,7 +166,7 @@ body.lock {
 .header__menu .menu__list .carrent-menu__link .sub-menu__List {
   position: absolute;
   margin-top: 45px;
-  width: 100%;
+  width: 126%;
   text-align: left;
   padding: 20px 15px;
   visibility: hidden;
