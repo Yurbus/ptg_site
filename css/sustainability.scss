@@ -500,12 +500,13 @@ body.lock {
 /*----------------------------------------------------------------------------------------*/
 /*------------ Footer style --------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------*/
-
+.footer {
+	background: #002F7D;
+	padding: 54px 0;
+}
 .footer__body {
-	border-top: 2px solid #CECECE;
-	padding: 32px 0 18px;
 	display: grid;
-	grid-template-columns: 305px 1fr 305px;
+	grid-template-columns: 230px 410px 1fr;
 }
 .footer__logo {
 	display: flex;
@@ -524,14 +525,51 @@ body.lock {
 		line-height: 140%;
 	}
 }
+.footer__address {
+	.address_list {
+		display: flex;
+		flex-direction: column;
+		li {
+			color: #fff;
+			font-size: 12px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 160%;
+			a {
+				color: #fff;
+				font-size: 12px;
+				font-style: normal;
+				font-weight: 500;
+				line-height: 160%;
+			}
+			.mail {
+				font-size: 16px;
+				font-style: normal;
+				font-weight: 600;
+				line-height: normal;
+				text-decoration-line: underline;
+			}
+			.tel {
+				font-size: 18px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: 140%;
+			}
+		}
+		li:not(:last-child) {
+			margin-bottom: 44px;
+		}
+	}
+}
+	
 .footer__navigation {
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 }
 .navigation_list {
-	margin: 0 24px;
+	margin: 0 36px;
 	h4 {
-		color: #000;
+		color: #fff;
 		font-size: 14px;
 		font-style: normal;
 		font-weight: 700;
@@ -545,6 +583,7 @@ body.lock {
 		li {
 			margin-bottom: 18px;
 			a {
+				color: #fff;
 				position: relative;
 				font-size: 12px;
 				font-style: normal;
@@ -558,7 +597,7 @@ body.lock {
 					left: 50%;
 					width: 0;
 					height: 1px;
-					background: #000;
+					background: #ffffff;
 					transition: all .5s ease;
 				}
 				&:hover:before {
@@ -566,70 +605,47 @@ body.lock {
 					left: 0;
 				}
 				&:hover {
-					color: #000;
+					color: #ffffff;
 				}
 			}
 		}
 	}
 }
-
-.footer__address {
-	.address_list {
-		display: flex;
-		flex-direction: column;
-		li {
-			display: flex;
-			align-items: flex-start;
-			margin-bottom: 18px;
-			img {
-				width: 24px;
-				height: 24px;
-				margin-right: 14px;
-			}
-			a {
-				font-size: 12px;
-				font-style: normal;
-				font-weight: 500;
-				line-height: 140%;
-			}
-			.tel {
-				font-size: 18px;
-				font-style: normal;
-				font-weight: 700;
-				line-height: 140%;
-			}
-		}
-	}
-}
-
 .copyright {
 	display: flex;
-	justify-content: center;
-	padding: 0 0 18px;
+	justify-content: flex-end;
+	padding: 0 30px 0 0;
 	span {
 		font-size: 10px;
+		color: #fff;
 		font-style: normal;
-		font-weight: 500;
+		font-weight: 700;
 		line-height: 140%;
 	}
 
 }
-@media screen and (max-width:1120.98px) {
+@media screen and (max-width:1170.98px) {
 	.footer__body {
-		grid-template-columns: 238px 1fr 238px;
+		display: grid;
+		grid-template-columns: 200px 290px 1fr;
+	}
+}
+@media screen and (max-width:992.98px) {
+	.footer__body {
+		display: grid;
+		grid-template-columns: 160px 220px 1fr;
 	}
 }
 @media screen and (max-width:959.98px) {
-	.footer__body {
-		grid-template-columns: 180px 1fr 238px;
-	}
-	.navigation_list {
-		margin: 0px 15px;
-	}
+	
 }
 @media screen and (max-width:859.98px) {
-	.footer__navigation {
-		flex-wrap: wrap;
+	.footer__body {
+		display: grid;
+		grid-template-columns: 130px 220px 1fr;
+	}
+	.navigation_list {
+		margin: 0 20px;
 	}
 }
 @media screen and (max-width:768.98px) {
@@ -643,23 +659,45 @@ body.lock {
 			text-align: center;
 		}
 	}
+	.footer__address {
+		display: flex;
+		justify-content: center;
+		.address_list {
+			margin-left: 0;
+			text-align: center;
+			li:not(:last-child) {
+				margin-bottom: 32px;
+			}
+		}
+	}
 	.footer__navigation {
-		margin: 30px 0;
-		justify-content: flex-start;
+		margin: 45px 0 30px;
+		justify-content: center;
 		.navigation_list {
 			margin: 0px 36px;
 		}
 	}
-	.footer__address {
-		.address_list {
-			margin-left: 50px;
-		}
+	.copyright {
+		justify-content: center;
+		padding: 0 30px;
 	}
 }
-@media screen and (max-width:479.98px) {
-	.navigation_list:last-child {
-		margin-top: 30px;
+@media screen and (max-width:540.98px) {
+	.footer__navigation {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		.navigation_list:last-child {
+			margin-top: 30px;
+		}
 	}
+	
+}
+@media screen and (max-width:480.98px) {
+	.footer__navigation .navigation_list {
+		margin: 0px 20px;
+		width: 100%;
+	}
+
 }
 
 

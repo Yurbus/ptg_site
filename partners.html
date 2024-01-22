@@ -63,8 +63,15 @@
 			<div class="footer__container">
 				<div class="footer__body">
 					<div class="footer__logo">
-						<a href="index.html"><img src="img/logo_black.svg" alt="logo"></a>
-						<span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the </span>
+						<a href="index.html"><img src="img/logo_white.svg" alt="logo"></a>
+					</div>
+					<div class="footer__address">
+						<ul class="address_list">
+							<li><strong>PTG Paper Trading Group </strong><br>
+								SA Place Numa-Droz 2<br> CP 3247 <br>2000 NeuchâtelSwitzerland</li>
+							<li><a class="mail" href="mailto:contact@papertrading.ch ">contact@papertrading.ch </a></li>
+							<li><a class="tel" href="tel:+41327214725">+41 32 721 47 25</a></li>
+						</ul>
 					</div>
 					<div class="footer__navigation">
 						<div class="navigation_list">
@@ -91,47 +98,45 @@
 							</ul>
 						</div>
 					</div>
-					<div class="footer__address">
-						<ul class="address_list">
-							<li><img src="img/Sustainability/Location.svg" alt="icon"><a href="contacts.html">PTG Paper Trading Group <br>
-								<strong>SAPlace Numa-Droz 2, CP 32472000 NeuchâtelSwitzerland</strong></a></li>
-							<li><img src="img/Sustainability/Call.svg" alt="icon"><a class="tel" href="tel:+41327214725">+41 32 721 47 25</a></li>
-						</ul>
-					</div>
 				</div>
 				<div class="copyright">
-					<span>PTG 2023 all tight is reserved</span>
+					<span>© PTG SA 2024. All rights reserved</span>
 				</div>
 			</div>
 		</footer>
+
+		<div class="toUp">
+			<a href="" class="up_btn"><img src="img/up.svg" alt="icon"></a>
+			<style>
+				.toUp {
+					position: fixed;
+					bottom: 20px;
+					right: 20px;
+				}
+			</style>
+		</div>
 	</div>
 
 	<div id="popup" class="popup"><!-- Popup -->
 		<div class="popup__body">
 			<div class="popup__content">
 				<a href="#" class="popup__close close-popup"><img src="img/close.svg" alt="close"></a>
-				<form action="" id="form" method="POST" class="form__body">
-					<h4 class="form__title">Замовити консультацію</h4>
-					<p class="form__sub-title">Будь ласка, введіть корректно ваші данні</p>
-					<div class="form__wrapper">
+				<form action="" class="form__contact">
+					<h4>Please, enter correct information:</h4>
+					<div class="input__croup">
+						<input type="text" class="input_date" name="name" placeholder="Name">
+						<input type="text" class="input_date" name="lastName" placeholder="Second Name">
+					</div>
+					<input type="tel" class="input_date" name="phone" placeholder="Phone">
+					<input type="email" class="input_date" name="email" placeholder="Email">
+					<textarea class="input_date" name="message" cols="30" rows="7" placeholder="Type something"></textarea>
 					
-						<div class="form__group">
-							<div class="form__item">
-								<input type="text" id="name" name="Ім'я:" class="form__input input-form" placeholder="Ваше ім'я:">
-							</div>
-							<div class="form__item">
-								<input type="tel" id="phone" name="Телефон:" class="form__input input-form" placeholder="Ваш телефон:">
-							</div>
-							<div class="form__item">
-								<input type="email" id="email" name="E-mail" class="form__input input-form" placeholder="Електронна пошта:">
-							</div>
-						</div>
+					<div class="bottom__action">
 						<div class="policy__check">
-							<input type="checkbox" id="policy_about" name="interest" value="policy" />
-							<label for="policy_about">Я погоджуюсь з правилами <a href="#" target="_blank">політики конфіденційності</a></label>
+							<input type="checkbox" id="policy" name="interest" value="policy">
+							<label for="policy">I confirm the processing of my <a href="#" target="_blank">personal data</a></label>
 						</div>
-
-						<button type="submit" class="submit yelow_btns">Замовити захист</button>
+						<button type="submit" class="contact__btn">Send</button>
 					</div>
 				</form>
 			</div>

@@ -66,8 +66,8 @@
 						<div class="head__description">
 							<p>Since 2002, the Swiss-based Papertrading Group SA (PTG) has been ensuring that the<br /> customers all over Europe benefit from our knowledge and expertise in the paper and<br /> packaging market.</p>
 						</div>
-						<div class="head__btns"> <a class="btn btn-white" href="#">Contact</a>
-							<a class="btn btn-transparent" href="#">Read more</a> 
+						<div class="head__btns"> <a class="btn btn-white" href="contacts.html">Contact</a>
+							<a class="btn btn-transparent" href="about.html">Read more</a> 
 						</div>
 						<ul class="head__list">
 							<li> <span id="years">0</span> years of serving customers </li>
@@ -112,7 +112,7 @@
 							<p><img decoding="async" class="alignnone our-prod-2 size-medium wp-image-66" src="img/about/our-prod-2-300x167.png" alt="" /></p>
 							<p>With our preferred partner ELGRAF, we offer complete packaging solutions for customers across Europe, specializing in the manufacturing of full colour packaging, cardboard, corrugated- and micro-corrugated packaging products for various industries.<br /> Thanks to the in-house production of materials and the use of the latest pre-print and printing technologies, we can print flexo and offset with the highest quality in short times.</p>
 							<h6>Get inspired and convinced by our smart retail packaging solutions.</h6>
-							<p><a href="#">Learn more</a></p>
+							<p><a href="smart_packaging.html">Learn more</a></p>
 							<div id="gtx-trans" style="position: absolute; left: -63px; top: 413.016px;">
 								<div class="gtx-trans-icon"></div>
 							</div>
@@ -125,7 +125,7 @@
 							<h3>GRAPHIC PAPER</h3>
 							<p>Because every print project is different and has its individual needs, PTG offers a wide range of graphic papers. From virgin fiber based to 100 % recycled graphic paper. No matter if you want to print magazines, newspaper inserts, catalogues, newspapers, books or flyers: We have the right paper for you. And of course, we will be happy to advise you personally on the right paper.</p>
 							<h6>Find out about our graphic paper portfolio.</h6>
-							<p><a href="#">Learn more</a></p>
+							<p><a href="products.html">Learn more</a></p>
 							<div id="gtx-trans" style="position: absolute; left: -208px; top: 435.062px;">
 								<div class="gtx-trans-icon"></div>
 							</div>
@@ -138,7 +138,7 @@
 							<h3>PACKAGING PAPER</h3>
 							<p>Based on our specific expertise and our long-time partnership with the LEIPA Group – the pioneer and one of the market leaders in 100 % recycled corrugated base paper – we focus on so called “Liner”: High-quality corrugated base paper for impressively printed packaging as brand ambassador and contribution to a positive environmental balance at the same time.</p>
 							<h6>Learn more about our selection of packaging papers.</h6>
-							<p><a href="#">Learn more</a></p>
+							<p><a href="paper.html">Learn more</a></p>
 						</div>
 					</div>
 				</div>
@@ -177,7 +177,7 @@
 							<p>At PTG SA/ELGRAF, we are proud to be part of this transition. We’re committed to offering sustainable paper-based solutions that not only meet the demands of the packaging and printing industry but also help safeguard our planet for future generations.</p>
 						</div>
 						<div class="sustainability__bold-text"> Further information on the subject of PTG and sustainability and on our certificates. </div>
-						<div class="sustainability__btn"> <a class="btn btn-default" href="https://test.trainer.dp.ua/sustainability-and-environment/" class="sustainability__link">
+						<div class="sustainability__btn"> <a class="btn btn-default" href="sustainability.html" class="sustainability__link">
                 Sustainability              </a> </div>
 					</div>
 					<div class="sustainability__col">
@@ -233,7 +233,7 @@
 						hearing from you. Professional advice and prompt responses to your questions and enquiries are a priority for us. 
 					</p>
 					<div class="bottom_button">
-						<a href="">Сontact us</a>
+						<a class="popup-link" href="#popup">Сontact us</a>
 					</div>
 				</div>
 			</div>
@@ -244,8 +244,15 @@
 		<div class="footer__container">
 			<div class="footer__body">
 				<div class="footer__logo">
-					<a href="index.html"><img src="img/logo_black.svg" alt="logo"></a>
-					<span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the </span>
+					<a href="index.html"><img src="img/logo_white.svg" alt="logo"></a>
+				</div>
+				<div class="footer__address">
+					<ul class="address_list">
+						<li><strong>PTG Paper Trading Group </strong><br>
+							SA Place Numa-Droz 2<br> CP 3247 <br>2000 NeuchâtelSwitzerland</li>
+						<li><a class="mail" href="mailto:contact@papertrading.ch ">contact@papertrading.ch </a></li>
+						<li><a class="tel" href="tel:+41327214725">+41 32 721 47 25</a></li>
+					</ul>
 				</div>
 				<div class="footer__navigation">
 					<div class="navigation_list">
@@ -272,19 +279,57 @@
 						</ul>
 					</div>
 				</div>
-				<div class="footer__address">
-					<ul class="address_list">
-						<li><img src="img/Sustainability/Location.svg" alt="icon"><a href="contacts.html">PTG Paper Trading Group <br>
-							<strong>SAPlace Numa-Droz 2, CP 32472000 NeuchâtelSwitzerland</strong></a></li>
-						<li><img src="img/Sustainability/Call.svg" alt="icon"><a class="tel" href="tel:+41327214725">+41 32 721 47 25</a></li>
-					</ul>
-				</div>
 			</div>
 			<div class="copyright">
-				<span>PTG 2023 all tight is reserved</span>
+				<span>© PTG SA 2024. All rights reserved</span>
 			</div>
 		</div>
 	</footer>
+
+	<div class="toUp">
+		<a href="" class="up_btn"><img src="img/up.svg" alt="icon"></a>
+		<style>
+			.toUp {
+				position: fixed;
+				bottom: 20px;
+				right: 20px;
+				z-index: 20;
+			}
+		</style>
+	</div>
+
+	<div id="popup" class="popup"><!-- Popup -->
+		<div class="popup__body">
+			<div class="popup__content">
+				<a href="#" class="popup__close close-popup"><img src="img/close.svg" alt="close"></a>
+				<form action="mail.php" id="form" class="form__contact">
+					<!-- Hidden Required Fields -->
+					<input type="hidden" name="project_name" value="Contact us">
+					<input type="hidden" name="admin_email" value="frankins636@gmail.com">
+					<input type="hidden" name="form_subject" value="Get in Touch with PTG SA/ELGRAF">
+					<!-- END Hidden Required Fields -->
+					<h4>Contact us</h4>
+					<span>Get in Touch with PTG SA/ELGRAF</span>
+					<div class="input__croup">
+						<input type="text" class="input_date" name="name" placeholder="Name">
+						<input type="text" class="input_date" name="lastName" placeholder="Second Name">
+					</div>
+					<input type="tel" class="input_date" name="phone" placeholder="Phone">
+					<input type="email" class="input_date" name="email" placeholder="Email">
+					<textarea class="input_date" name="message" cols="30" rows="7" placeholder="Type something"></textarea>
+					
+					<div class="bottom__action">
+						<div class="policy__check">
+							<input type="checkbox" id="policy" class="policy" name="interest" value="policy">
+							<label for="policy">I confirm the processing of my <a href="#" target="_blank">personal data</a></label>
+						</div>
+						<button type="submit" class="contact__btn">Send</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div><!-- End popup -->
+
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

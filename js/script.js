@@ -79,18 +79,24 @@ function animateCount(element, targetValue, duration) {
         }
     });
 }
-
 function startCountAnimation() {
     animateCount($('#years'), 22, 2000); // Adjust duration as needed
     animateCount($('#partners'), 15, 2000);
     animateCount($('#countries'), 14, 2000);
 }
-
 // Trigger the counting animation when the document is ready
 $(document).ready(function () {
     startCountAnimation();
 });
 
+
+jQuery(document).ready(function() {
+    var btn = $('.up_btn');  
+     btn.on('click', function(e) {
+       e.preventDefault();
+       $('html, body').animate({scrollTop:0}, '300');
+     });
+  });
 
 // Прокрутка при клике
 // const menuLinks = document.querySelectorAll('.menu__link[data-goto]');
@@ -181,16 +187,16 @@ $(document).ready(function () {
 // 	}
 // }
 
-// $('#form').submit(function(){
-// 	$.ajax({
-// 		type:"POST",
-// 		url: "mail.php",
-// 		data: $(this).serialize()
-// 	}).done(function() {
-// 	alert("Спасибо что обратились ко мне!");
-// 	setTimeout(function() {
-// 		$.magnificPopup.close();
-// 	}, 1000);
-// 	});
-// 	return false;
-// });
+$('#form').submit(function(){
+	$.ajax({
+		type:"POST",
+		url: "mail.php",
+		data: $(this).serialize()
+	}).done(function() {
+	alert("Thank you for contacting us!");
+	setTimeout(function() {
+		$.magnificPopup.close();
+	}, 1000);
+	});
+	return false;
+});
