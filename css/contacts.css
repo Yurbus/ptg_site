@@ -162,14 +162,13 @@ body.lock {
 .header__menu .menu__list .carrent-menu__link .sub-menu__List {
   position: absolute;
   margin-top: 45px;
-  width: 100%;
-  text-align: left;
-  padding: 20px 15px;
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.5s ease, transform 0.5s ease;
   transform-origin: top center;
   background-color: #fff;
+  padding: 20px 15px;
+  width: 100%;
   box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
 }
 .header__menu .menu__list .carrent-menu__link .sub-menu__List .sub-menu__link {
@@ -232,141 +231,99 @@ body.lock {
   text-transform: uppercase;
 }
 
-.title__h3 {
+/*------------ main__section style ------------------------------*/
+/*------------ Contacts -----------------------------------*/
+.section__contacts {
+  margin-top: 140px;
+}
+
+.contacts__title-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 44px;
+}
+.contacts__title-block .contacts__title {
+  text-align: center;
+}
+.contacts__title-block .contacts__text {
+  text-align: center;
+}
+
+.contacts__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 120px;
+  padding-bottom: 50px;
+  margin-top: 80px;
+}
+.contacts__content .content__address {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+.contacts__content .address__list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+}
+.contacts__content .address__list li img {
+  width: 48px;
+  height: 48px;
+  margin-right: 22px;
+}
+.contacts__content .address__list li a {
   font-family: "Lao MN";
-  font-size: 32px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 250;
   line-height: normal;
 }
-
-/*------------ main__section style ------------------------------*/
-.hero__title {
-  margin-top: 160px;
-  text-align: center;
+.contacts__content .map {
+  width: 100%;
+  border-radius: 6px;
 }
-
-.hero__text {
-  text-align: center;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  max-width: 1026px;
-  margin: 0 auto 44px;
+.contacts__content .map iframe {
+  width: 100%;
+  border-radius: 6px;
 }
-
-.hero__content .hero__image img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 12px;
+.contacts__content .content__form .form__contact {
+  display: flex;
+  flex-direction: column;
 }
-.hero__content .hero__block-text {
-  margin-top: 44px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 17px;
-}
-.hero__content .hero__block-text .text__block h3 {
+.contacts__content .content__form .form__contact h4 {
   font-family: "Lao MN";
   font-size: 24px;
   font-style: normal;
   font-weight: 250;
   line-height: normal;
-  margin-bottom: 24px;
+  margin-bottom: 32px;
 }
-.hero__content .hero__block-text .text__block p {
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 140%;
-  margin-bottom: 10px;
-}
-
-/*------------ Partnership -------------------------------------*/
-.partnership {
-  margin-top: 100px;
-  padding-bottom: 50px;
-}
-
-.partnership__title {
-  text-align: center;
-  max-width: 1050px;
-  margin: 0 auto;
-  margin-bottom: 24px;
-}
-
-.partnership__column {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-}
-.partnership__column .partnership__item {
-  margin-top: 30px;
-}
-.partnership__column .partnership__item p {
-  font-family: "Lao MN";
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  margin-top: 8px;
-}
-
-/*------------ contributing ----------------------------*/
-.contributing__mission {
-  margin-top: 100px;
-}
-
-.contributing__body {
-  padding-bottom: 60px;
-}
-
-.contributing_content {
+.contacts__content .content__form .form__contact .input__croup {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items: center;
-  margin-top: 100px;
+  gap: 12px;
 }
-
-.contributing__text {
-  margin-right: 100px;
-}
-.contributing__text h3 {
-  font-family: "Lao MN";
-  font-size: 44px;
+.contacts__content .content__form .form__contact .input_date {
+  color: #000 !important;
+  font-size: 12px;
   font-style: normal;
-  font-weight: 250;
+  font-weight: 400;
   line-height: normal;
+  font-family: "Montserrat";
+  border-radius: 8px;
+  background: #F6F6F6;
+  padding: 25px 18px;
+  border: none;
   margin-bottom: 12px;
 }
-.contributing__text p {
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 140%;
-}
-
-.contributing__image {
-  width: 100%;
-}
-.contributing__image img {
-  border-radius: 12px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.contributing_content-reverse .contributing__text {
-  margin-right: 0;
-  margin-left: 100px;
-}
-
-.contributing_button {
+.contacts__content .content__form .form__contact .bottom__action {
   display: flex;
-  flex-direction: column;
-  align-items: start;
+  align-items: center;
+  justify-content: space-between;
 }
-.contributing_button a {
+.contacts__content .content__form .form__contact .bottom__action .contact__btn {
   color: #FFF;
   text-align: center;
   font-size: 14px;
@@ -380,59 +337,9 @@ body.lock {
   margin-top: 20px;
   display: inline-flex;
   transition: all 0.3s ease 0s;
+  cursor: pointer;
 }
-.contributing_button a:hover {
-  background: transparent;
-  color: #0060FF;
-}
-
-/*------------ experience ----------------------------*/
-.section__experience {
-  margin: 50px 0;
-}
-
-.experience__body {
-  background: linear-gradient(87deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.26) 79.91%), url("../img/Graphic-paper/bottom_img.jpg") center/cover no-repeat;
-  border-radius: 18px;
-  padding: 80px 64px;
-}
-.experience__body .experience__title {
-  color: #FFF;
-  font-family: "Lao MN";
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  max-width: 450px;
-  margin-bottom: 24px;
-}
-.experience__body p {
-  color: #FFF;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 140%;
-  max-width: 756px;
-}
-.experience__body p:not(:last-child) {
-  margin-bottom: 24px;
-}
-.experience__body .experience_button a {
-  color: #FFF;
-  text-align: center;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  border-radius: 64px;
-  border: 1px solid #0060FF;
-  background: #0060FF;
-  padding: 14px 54px;
-  margin-top: 20px;
-  display: inline-flex;
-  transition: all 0.3s ease 0s;
-}
-.experience__body .experience_button a:hover {
+.contacts__content .content__form .form__contact .bottom__action .contact__btn:hover {
   background: transparent;
   color: #0060FF;
 }
@@ -440,7 +347,6 @@ body.lock {
 /*----------------------------------------------------------------------------------------*/
 /*------------ Footer style --------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------*/
-/*-------------------- Footer -------------------------------------------------------*/
 .footer__body {
   border-top: 2px solid #CECECE;
   padding: 32px 0 18px;
@@ -611,12 +517,29 @@ body.lock {
 /*============================ Media queries ==============================================*/
 /*=========================================================================================*/
 /*=========================================================================================*/
-@media screen and (max-width: 992.98px) {
-  .contributing_content .mission__text {
-    margin-right: 30px;
+@media screen and (max-width: 1280.98px) {
+  .contacts__content {
+    gap: 40px;
   }
-  .contributing_content-reverse .contributing__text {
-    margin-left: 30px;
+}
+@media screen and (max-width: 992.98px) {
+  .contacts__content .address__list li {
+    margin-bottom: 22px;
+  }
+  .contacts__content .address__list li img {
+    width: 34px;
+    height: 34px;
+    margin-right: 12px;
+  }
+  .contacts__content .address__list li a {
+    font-size: 16px;
+  }
+  .contacts__content .content__form .form__contact h4 {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+  .contacts__content .content__form .form__contact input {
+    padding: 20px 18px;
   }
 }
 @media screen and (max-width: 959.98px) {
@@ -688,6 +611,7 @@ body.lock {
     transition: all 0.3s ease 0s;
     transform: translate(100%);
     border: none;
+    border-radius: 0;
     background: #fff;
     height: 100vh;
     left: 0;
@@ -727,84 +651,25 @@ body.lock {
     display: none;
   }
 }
+@media screen and (max-width: 859.98px) {
+  .contacts__content {
+    grid-template-columns: 1fr;
+  }
+  .contacts__content .content__form .form__contact {
+    margin-top: 30px;
+  }
+}
 @media screen and (max-width: 768.98px) {
   .title__h1 {
-    font-size: 30px;
-  }
-  .title__h2 {
-    font-size: 24px;
-  }
-  .title__h3 {
-    font-size: 22px;
-  }
-  .hero__text {
-    font-size: 14px;
-  }
-  .hero__content .hero__block-text {
-    margin-top: 20px;
-  }
-  .hero__content .hero__block-text .text__block h3 {
-    font-size: 18px;
-  }
-  .hero__content .hero__block-text .text__block p {
-    font-size: 14px;
-  }
-  .partnership__column {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-  }
-  .contributing_content {
-    grid-template-columns: 1fr;
-  }
-  .contributing_content .contributing__text {
-    margin-right: 0;
-    margin-left: 0;
-  }
-  .contributing_content .contributing__text h3 {
-    font-size: 24px;
-  }
-  .contributing_content .contributing__text p {
-    font-size: 14px;
-    margin-bottom: 24px;
-  }
-  .contributing_content-reverse {
-    display: flex;
-    flex-direction: column-reverse;
-    margin-top: 60px;
-  }
-  .contributing_content-reverse .contributing__text {
-    margin-bottom: 40px;
-  }
-  .contributing_content-reverse .contributing__text .contributing_button {
-    align-items: center;
-  }
-  .experience__body {
-    padding: 40px 32px;
-  }
-  .experience__body .experience__title {
-    font-size: 24px;
-  }
-  .experience__body p {
-    font-size: 14px;
+    font-size: 34px;
   }
 }
-@media screen and (max-width: 559.98px) {
-  .hero__content .hero__block-text {
+@media screen and (max-width: 414.98px) {
+  .contacts__content .content__form .form__contact .input__croup {
     grid-template-columns: 1fr;
+    gap: 0;
   }
-  .hero__image img {
-    height: 180px;
+  .contacts__content .content__form .form__contact .bottom__action {
+    flex-direction: column;
   }
-}
-@media screen and (max-width: 479.98px) {
-  .partnership {
-    margin-top: 70px;
-  }
-  .partnership__column {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-  }
-  .contributing__mission {
-    margin-top: 70px;
-  }
-}/*# sourceMappingURL=products.css.map */
+}/*# sourceMappingURL=contacts.css.map */

@@ -166,6 +166,9 @@ body.lock {
   transition: opacity 0.5s ease, transform 0.5s ease;
   transform-origin: top center;
   background-color: #fff;
+  padding: 20px 15px;
+  width: 100%;
+  box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
 }
 .header__menu .menu__list .carrent-menu__link .sub-menu__List .sub-menu__link {
   margin-bottom: 15px;
@@ -214,18 +217,172 @@ body.lock {
 /*----------------------------------------------------------------------------------------*/
 /*------------ Footer style --------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------*/
-.footer {
-  background: #1B1B1B;
-  width: 100%;
-  padding: 65px 0 19px;
-}
-
+/*-------------------- Footer -------------------------------------------------------*/
 .footer__body {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  border-top: 2px solid #CECECE;
+  padding: 32px 0 18px;
+  display: grid;
+  grid-template-columns: 305px 1fr 305px;
 }
 
+.footer__logo {
+  display: flex;
+  flex-direction: column;
+}
+.footer__logo a {
+  display: block;
+  margin-bottom: 24px;
+}
+.footer__logo a img {
+  max-width: 100px;
+}
+.footer__logo span {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+.footer__navigation {
+  display: flex;
+  justify-content: center;
+}
+
+.navigation_list {
+  margin: 0 24px;
+}
+.navigation_list h4 {
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 19.6px */
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.navigation_list .navigation_left li,
+.navigation_list .navigation_center li,
+.navigation_list .navigation_right li {
+  margin-bottom: 18px;
+}
+.navigation_list .navigation_left li a,
+.navigation_list .navigation_center li a,
+.navigation_list .navigation_right li a {
+  position: relative;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  font-family: "Montserrat";
+}
+.navigation_list .navigation_left li a:before,
+.navigation_list .navigation_center li a:before,
+.navigation_list .navigation_right li a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 0;
+  height: 1px;
+  background: #000;
+  transition: all 0.5s ease;
+}
+.navigation_list .navigation_left li a:hover:before,
+.navigation_list .navigation_center li a:hover:before,
+.navigation_list .navigation_right li a:hover:before {
+  width: 100%;
+  left: 0;
+}
+.navigation_list .navigation_left li a:hover,
+.navigation_list .navigation_center li a:hover,
+.navigation_list .navigation_right li a:hover {
+  color: #000;
+}
+
+.footer__address .address_list {
+  display: flex;
+  flex-direction: column;
+}
+.footer__address .address_list li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 18px;
+}
+.footer__address .address_list li img {
+  width: 24px;
+  height: 24px;
+  margin-right: 14px;
+}
+.footer__address .address_list li a {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+}
+.footer__address .address_list li .tel {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  padding: 0 0 18px;
+}
+.copyright span {
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+@media screen and (max-width: 1120.98px) {
+  .footer__body {
+    grid-template-columns: 238px 1fr 238px;
+  }
+}
+@media screen and (max-width: 959.98px) {
+  .footer__body {
+    grid-template-columns: 180px 1fr 238px;
+  }
+  .navigation_list {
+    margin: 0px 15px;
+  }
+}
+@media screen and (max-width: 859.98px) {
+  .footer__navigation {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 768.98px) {
+  .footer__body {
+    grid-template-columns: 1fr;
+  }
+  .footer__logo {
+    align-items: center;
+    margin-bottom: 14px;
+  }
+  .footer__logo span {
+    text-align: center;
+  }
+  .footer__navigation {
+    margin: 30px 0;
+    justify-content: flex-start;
+  }
+  .footer__navigation .navigation_list {
+    margin: 0px 36px;
+  }
+  .footer__address .address_list {
+    margin-left: 50px;
+  }
+}
+@media screen and (max-width: 479.98px) {
+  .navigation_list:last-child {
+    margin-top: 30px;
+  }
+}
 /*=========================================================================================*/
 /*=========================================================================================*/
 /*============================ Media queries ==============================================*/
@@ -295,12 +452,16 @@ body.lock {
     align-items: center;
     flex-direction: column;
     width: 100%;
-    margin-top: 350px;
     visibility: hidden;
     opacity: 0;
     transition: all 0.3s ease 0s;
     transform: translate(100%);
     border: none;
+    border-radius: 0;
+    background: #fff;
+    height: 100vh;
+    left: 0;
+    top: 0;
   }
   .header__menu .menu__list {
     display: flex;

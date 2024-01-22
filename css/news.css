@@ -83,7 +83,6 @@ body.lock {
   width: 100%;
   left: 0;
   top: 0;
-  background: #fff;
 }
 
 .header__body {
@@ -162,14 +161,13 @@ body.lock {
 .header__menu .menu__list .carrent-menu__link .sub-menu__List {
   position: absolute;
   margin-top: 45px;
-  width: 100%;
-  text-align: left;
-  padding: 20px 15px;
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.5s ease, transform 0.5s ease;
   transform-origin: top center;
   background-color: #fff;
+  padding: 20px 15px;
+  width: 100%;
   box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
 }
 .header__menu .menu__list .carrent-menu__link .sub-menu__List .sub-menu__link {
@@ -213,230 +211,9 @@ body.lock {
 /*---------------------------------------------------------------------------------------*/
 /*------------ Main style ---------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------*/
-.title__h1 {
-  font-family: "Lao MN";
-  font-size: 64px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  text-transform: uppercase;
-  margin-bottom: 12px;
-}
-
-.title__h2 {
-  font-family: "Lao MN";
-  font-size: 44px;
-  font-style: normal;
-  font-weight: 250;
-  line-height: normal;
-  text-transform: uppercase;
-}
-
-.title__h3 {
-  font-family: "Lao MN";
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 250;
-  line-height: normal;
-}
-
 /*------------ main__section style ------------------------------*/
-.hero__title {
-  margin-top: 160px;
-  text-align: center;
-}
-
-.hero__text {
-  text-align: center;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  max-width: 1026px;
-  margin: 0 auto 44px;
-}
-
-.hero__content .hero__image img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 12px;
-}
-.hero__content .hero__block-text {
-  margin-top: 44px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 17px;
-}
-.hero__content .hero__block-text .text__block h3 {
-  font-family: "Lao MN";
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 250;
-  line-height: normal;
-  margin-bottom: 24px;
-}
-.hero__content .hero__block-text .text__block p {
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 140%;
-  margin-bottom: 10px;
-}
-
-/*------------ Partnership -------------------------------------*/
-.partnership {
-  margin-top: 100px;
-  padding-bottom: 50px;
-}
-
-.partnership__title {
-  text-align: center;
-  max-width: 1050px;
-  margin: 0 auto;
-  margin-bottom: 24px;
-}
-
-.partnership__column {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-}
-.partnership__column .partnership__item {
-  margin-top: 30px;
-}
-.partnership__column .partnership__item p {
-  font-family: "Lao MN";
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  margin-top: 8px;
-}
-
-/*------------ contributing ----------------------------*/
-.contributing__mission {
-  margin-top: 100px;
-}
-
-.contributing__body {
-  padding-bottom: 60px;
-}
-
-.contributing_content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  margin-top: 100px;
-}
-
-.contributing__text {
-  margin-right: 100px;
-}
-.contributing__text h3 {
-  font-family: "Lao MN";
-  font-size: 44px;
-  font-style: normal;
-  font-weight: 250;
-  line-height: normal;
-  margin-bottom: 12px;
-}
-.contributing__text p {
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 140%;
-}
-
-.contributing__image {
-  width: 100%;
-}
-.contributing__image img {
-  border-radius: 12px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.contributing_content-reverse .contributing__text {
-  margin-right: 0;
-  margin-left: 100px;
-}
-
-.contributing_button {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-}
-.contributing_button a {
-  color: #FFF;
-  text-align: center;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  border-radius: 64px;
-  border: 1px solid #0060FF;
-  background: #0060FF;
-  padding: 14px 54px;
-  margin-top: 20px;
-  display: inline-flex;
-  transition: all 0.3s ease 0s;
-}
-.contributing_button a:hover {
-  background: transparent;
-  color: #0060FF;
-}
-
-/*------------ experience ----------------------------*/
-.section__experience {
-  margin: 50px 0;
-}
-
-.experience__body {
-  background: linear-gradient(87deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.26) 79.91%), url("../img/Graphic-paper/bottom_img.jpg") center/cover no-repeat;
-  border-radius: 18px;
-  padding: 80px 64px;
-}
-.experience__body .experience__title {
-  color: #FFF;
-  font-family: "Lao MN";
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  max-width: 450px;
-  margin-bottom: 24px;
-}
-.experience__body p {
-  color: #FFF;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 140%;
-  max-width: 756px;
-}
-.experience__body p:not(:last-child) {
-  margin-bottom: 24px;
-}
-.experience__body .experience_button a {
-  color: #FFF;
-  text-align: center;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  border-radius: 64px;
-  border: 1px solid #0060FF;
-  background: #0060FF;
-  padding: 14px 54px;
-  margin-top: 20px;
-  display: inline-flex;
-  transition: all 0.3s ease 0s;
-}
-.experience__body .experience_button a:hover {
-  background: transparent;
-  color: #0060FF;
-}
-
+/*------------ -------------------------------------*/
+/*------------  ----------------------------*/
 /*----------------------------------------------------------------------------------------*/
 /*------------ Footer style --------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------*/
@@ -611,14 +388,6 @@ body.lock {
 /*============================ Media queries ==============================================*/
 /*=========================================================================================*/
 /*=========================================================================================*/
-@media screen and (max-width: 992.98px) {
-  .contributing_content .mission__text {
-    margin-right: 30px;
-  }
-  .contributing_content-reverse .contributing__text {
-    margin-left: 30px;
-  }
-}
 @media screen and (max-width: 959.98px) {
   /*-------- Mobile menu style ---------*/
   .menu__icon {
@@ -688,6 +457,7 @@ body.lock {
     transition: all 0.3s ease 0s;
     transform: translate(100%);
     border: none;
+    border-radius: 0;
     background: #fff;
     height: 100vh;
     left: 0;
@@ -726,85 +496,4 @@ body.lock {
   .header__button {
     display: none;
   }
-}
-@media screen and (max-width: 768.98px) {
-  .title__h1 {
-    font-size: 30px;
-  }
-  .title__h2 {
-    font-size: 24px;
-  }
-  .title__h3 {
-    font-size: 22px;
-  }
-  .hero__text {
-    font-size: 14px;
-  }
-  .hero__content .hero__block-text {
-    margin-top: 20px;
-  }
-  .hero__content .hero__block-text .text__block h3 {
-    font-size: 18px;
-  }
-  .hero__content .hero__block-text .text__block p {
-    font-size: 14px;
-  }
-  .partnership__column {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-  }
-  .contributing_content {
-    grid-template-columns: 1fr;
-  }
-  .contributing_content .contributing__text {
-    margin-right: 0;
-    margin-left: 0;
-  }
-  .contributing_content .contributing__text h3 {
-    font-size: 24px;
-  }
-  .contributing_content .contributing__text p {
-    font-size: 14px;
-    margin-bottom: 24px;
-  }
-  .contributing_content-reverse {
-    display: flex;
-    flex-direction: column-reverse;
-    margin-top: 60px;
-  }
-  .contributing_content-reverse .contributing__text {
-    margin-bottom: 40px;
-  }
-  .contributing_content-reverse .contributing__text .contributing_button {
-    align-items: center;
-  }
-  .experience__body {
-    padding: 40px 32px;
-  }
-  .experience__body .experience__title {
-    font-size: 24px;
-  }
-  .experience__body p {
-    font-size: 14px;
-  }
-}
-@media screen and (max-width: 559.98px) {
-  .hero__content .hero__block-text {
-    grid-template-columns: 1fr;
-  }
-  .hero__image img {
-    height: 180px;
-  }
-}
-@media screen and (max-width: 479.98px) {
-  .partnership {
-    margin-top: 70px;
-  }
-  .partnership__column {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-  }
-  .contributing__mission {
-    margin-top: 70px;
-  }
-}/*# sourceMappingURL=products.css.map */
+}/*# sourceMappingURL=news.css.map */
