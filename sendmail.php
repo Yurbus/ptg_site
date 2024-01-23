@@ -6,48 +6,50 @@
     require 'phpmailer/src/PHPMailer.php';
 
     $mail = new PHPMailer(true);
-    $mail->Charset = 'UTF-8';
-    $mail->setLanguage('en','phpmailer/language');
+    $mail->CharSet = 'UTF-8';
+    $mail->setLanguage('ru', 'phpmailer/language/');
     $mail->IsHTML(true);
 
-    //От кого
-    $mail->setForm('frankins636@gmail.com', 'PTG');
-    //Кому
-    $mail->addAddress('frankins636@gmail.com');
-    //Тема письма
+    // From
+    $mail->setFrom('contact@ptg.trainer.dp.ua', 'PTG');
+
+    // To
+    $mail->addAddress('contact@ptg.trainer.dp.ua');
+
+    // Subject
     $mail->Subject = "Message from PTG";
 
-
-    //Тело письма
+    // Body
     $body = '<h1>Message from website PTG</h1>';
 
-    if(trim(!empty($_POST['name']))){
-        $body.='<p><strong>Name:</strong> '.$_POST['name'].'</p>';
+    if (isset($_POST['name']) && trim($_POST['name']) !== '') {
+        $body .= '<p><strong>Name:</strong> ' . $_POST['name'] . '</p>';
     }
-    if(trim(!empty($_POST['lastName']))){
-        $body.='<p><strong>Last name:</strong> '.$_POST['lastName'].'</p>';
+    if (isset($_POST['lastName']) && trim($_POST['lastName']) !== '') {
+        $body .= '<p><strong>Last name:</strong> ' . $_POST['lastName'] . '</p>';
     }
-    if(trim(!empty($_POST['phone']))){
-        $body.='<p><strong>Phone:</strong> '.$_POST['phone'].'</p>';
+    if (isset($_POST['phone']) && trim($_POST['phone']) !== '') {
+        $body .= '<p><strong>Phone:</strong> ' . $_POST['phone'] . '</p>';
     }
-    if(trim(!empty($_POST['email']))){
-        $body.='<p><strong>Email:</strong> '.$_POST['email'].'</p>';
+    if (isset($_POST['email']) && trim($_POST['email']) !== '') {
+        $body .= '<p><strong>Email:</strong> ' . $_POST['email'] . '</p>';
     }
-    if(trim(!empty($_POST['massage']))){
-        $body.='<p><strong>Message:</strong> '.$_POST['massage'].'</p>';
+    if (isset($_POST['message']) && trim($_POST['message']) !== '') {
+        $body .= '<p><strong>Message:</strong> ' . $_POST['message'] . '</p>';
     }
 
     $mail->Body = $body;
 
-    //Sending
+    // Sending
     if (!$mail->send()) {
         $message = 'Error';
     } else {
-        $mrssage = 'Message sent';
+        $message = 'Message sent';
     }
 
     $response = ['message' => $message];
 
     header('Content-type: application/json');
-    acho json_encode($response);
+    echo json_encode($response);
+    
 ?>
