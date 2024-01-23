@@ -55,12 +55,24 @@
 
 /*------------ Form style -----------------------*/
 .form__contact {
+  position: relative;
   display: flex;
   flex-direction: column;
   background: #FFFFFF;
   padding: 34px 24px;
   border-radius: 12px;
   width: 678px;
+}
+.form__contact::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2509803922) url("../img/loading.gif") center/50px no-repeat;
+  opacity: 0;
+  visibility: hidden;
 }
 .form__contact h4 {
   font-family: "Lao MN";
@@ -83,6 +95,12 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 12px;
+}
+.form__contact .input__croup ._error {
+  border: 1px solid red;
+}
+.form__contact input._error {
+  border: 1px solid red;
 }
 .form__contact .input_date {
   color: #000 !important;
@@ -111,6 +129,10 @@
   margin-right: 7px;
   width: 24px;
   height: 24px;
+  border: 1px solid #000;
+}
+.form__contact .bottom__action .policy__check .policy._error {
+  border: 1px solid red;
 }
 .form__contact .bottom__action .contact__btn {
   color: #FFF;
@@ -130,6 +152,11 @@
 .form__contact .bottom__action .contact__btn:hover {
   background: transparent;
   color: #0060FF;
+}
+
+.form__contact._sending::after {
+  opacity: 1;
+  visibility: visible;
 }
 
 @media screen and (max-width: 768.98px) {
