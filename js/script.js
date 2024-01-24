@@ -26,12 +26,13 @@ const isMobile = {
     }
 };
 
+//-------------------------------------------------------------------------------------------------
 // Animation
 // AOS.init({
 //     duration: 1200,
 // })
 
-
+//-------------------------------------------------------------------------------------------------
 // Меню бурнер
 const iconMenu = document.querySelector('.menu__icon');
 const menuBody = document.querySelector('.header__menu');
@@ -43,7 +44,7 @@ if (iconMenu) {
 	});
 }
 
-
+//-------------------------------------------------------------------------------------------------
 // добавить класс при скроле страницы
 let scrollpos = window.scrollY
 
@@ -65,9 +66,15 @@ window.addEventListener('scroll', function() {
 
 })
 
+//-------------------------------------------------------------------------------------------------
+// Маска на телефон 
+jQuery(document).ready(function($) {
+    $("#phone_mask").mask("+41 (99)-999-99-99",{placeholder:" "});
+});
 
+
+//-------------------------------------------------------------------------------------------------
 // Прокрутка чисел на странице 
-
 function animateCount(element, targetValue, duration) {
     $({ count: parseInt(element.text()) }).animate({ count: targetValue }, {
         duration: duration,
@@ -88,7 +95,7 @@ function startCountAnimation() {
 $(document).ready(function () {
     startCountAnimation();
 });
-
+//-------------------------------------------------------------------------------------------------
 // скрол на верх
 jQuery(document).ready(function() {
     var btn = $('.up_btn');  
@@ -98,7 +105,7 @@ jQuery(document).ready(function() {
         });
     });
 
-
+//-------------------------------------------------------------------------------------------------
 // Прокрутка при клике
 // const menuLinks = document.querySelectorAll('.menu__link[data-goto]');
 // if(menuLinks.length > 0) {
@@ -127,9 +134,8 @@ jQuery(document).ready(function() {
 // 	}
 // }
 
-
+//-------------------------------------------------------------------------------------------------
 //прикрепление файла в форме
-
 // const formImage = document.getElementById('formImage');
 // const formPreview = document.getElementById('formPreview');
 
@@ -157,7 +163,7 @@ jQuery(document).ready(function() {
 // 	reader.readAsDataURL(file);
 // }
 
-
+//-------------------------------------------------------------------------------------------------
 //style main-bg
 // function ibg(){
 // 	$.each($('.ibg'), function(index, val) {
@@ -168,7 +174,7 @@ jQuery(document).ready(function() {
 // };
 // ibg();
 
-
+//-------------------------------------------------------------------------------------------------
 // скрывать и показывать пароль в инпуте
 // var button2 = document.getElementById("showEye2");
 // button2.onclick = showEye2;
@@ -188,6 +194,7 @@ jQuery(document).ready(function() {
 // 	}
 // }
 
+//-------------------------------------------------------------------------------------------------
 // $('#form').submit(function(){
 // 	$.ajax({
 // 		type:"POST",

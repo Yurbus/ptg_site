@@ -289,22 +289,52 @@ body.lock {
   border-radius: 6px;
 }
 .contacts__content .content__form .form__contact {
+  position: relative;
   display: flex;
   flex-direction: column;
+  background: #FFFFFF;
+  padding: 34px 24px;
+  border-radius: 12px;
+  width: 678px;
 }
-.contacts__content .content__form .form__contact .form_title {
+.contacts__content .content__form .form__contact::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2509803922) url("../img/loading.gif") center/50px no-repeat;
+  opacity: 0;
+  visibility: hidden;
+}
+.contacts__content .content__form .form__contact h4 {
   font-family: "Lao MN";
-  font-size: 24px;
+  font-size: 32px;
   font-style: normal;
-  font-weight: 250;
+  font-weight: 400;
   line-height: normal;
-  margin-bottom: 32px;
-  text-align: left;
+  text-align: center;
+  text-transform: uppercase;
+}
+.contacts__content .content__form .form__contact span {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  margin-bottom: 24px;
 }
 .contacts__content .content__form .form__contact .input__croup {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 12px;
+}
+.contacts__content .content__form .form__contact .input__croup ._error {
+  border: 1px solid red;
+}
+.contacts__content .content__form .form__contact input._error {
+  border: 1px solid red;
 }
 .contacts__content .content__form .form__contact .input_date {
   color: #000 !important;
@@ -315,7 +345,7 @@ body.lock {
   font-family: "Montserrat";
   border-radius: 8px;
   background: #F6F6F6;
-  padding: 25px 18px;
+  padding: 18px;
   border: none;
   margin-bottom: 12px;
 }
@@ -323,6 +353,20 @@ body.lock {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.contacts__content .content__form .form__contact .bottom__action .policy__check {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+.contacts__content .content__form .form__contact .bottom__action .policy__check .policy {
+  margin-right: 7px;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #000;
+}
+.contacts__content .content__form .form__contact .bottom__action .policy__check .policy._error {
+  border: 1px solid red;
 }
 .contacts__content .content__form .form__contact .bottom__action .contact__btn {
   color: #FFF;
@@ -335,7 +379,6 @@ body.lock {
   border: 1px solid #0060FF;
   background: #0060FF;
   padding: 14px 54px;
-  margin-top: 20px;
   display: inline-flex;
   transition: all 0.3s ease 0s;
   cursor: pointer;
@@ -343,6 +386,10 @@ body.lock {
 .contacts__content .content__form .form__contact .bottom__action .contact__btn:hover {
   background: transparent;
   color: #0060FF;
+}
+.contacts__content .form__contact._sending::after {
+  opacity: 1;
+  visibility: visible;
 }
 
 /*----------------------------------------------------------------------------------------*/

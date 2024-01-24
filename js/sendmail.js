@@ -56,7 +56,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         return error;
     }
-
     function formAddError(input) {
         input.parentElement.classList.add('_error');
         input.classList.add('_error');

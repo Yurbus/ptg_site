@@ -20,7 +20,7 @@
     $mail->Subject = "Message from PTG";
 
     // Body
-    $body = '<h1>Message from website PTG</h1>';
+    $body = '<h1>Message from PTG website</h1>';
 
     if (isset($_POST['name']) && trim($_POST['name']) !== '') {
         $body .= '<p><strong>Name:</strong> ' . $_POST['name'] . '</p>';
@@ -36,6 +36,9 @@
     }
     if (isset($_POST['message']) && trim($_POST['message']) !== '') {
         $body .= '<p><strong>Message:</strong> ' . $_POST['message'] . '</p>';
+    }
+    if (isset($_POST['interest']) && trim($_POST['interest']) !== '') {
+        $body .= '<p><strong>Checkbox:</strong> ' . $_POST['message'] . '</p>';
     }
 
     $mail->Body = $body;
