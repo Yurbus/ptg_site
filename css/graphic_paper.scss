@@ -90,6 +90,7 @@ body.lock {
 	width: 100%;
 	left: 0;
 	top: 0;
+	background-color: #FFFFFF;
 }
 .header__body {
 	display: flex;
@@ -219,18 +220,299 @@ body.lock {
 /*---------------------------------------------------------------------------------------*/
 /*------------ Main style ---------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------*/
-
+.title__h1 {
+	font-family: "Lao MN";
+	font-size: 64px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	text-transform: uppercase;
+	margin-bottom: 12px;
+}
+.title__h2 {
+	font-family: "Lao MN";
+	font-size: 44px;
+	font-style: normal;
+	font-weight: 250;
+	line-height: normal;
+	text-transform: uppercase;
+}
+.title__h3 {
+	font-family: "Lao MN";
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 250;
+	line-height: normal;
+}
 /*------------ main__section style ------------------------------*/
+.g-hero__title {
+	margin-top: 160px;
+	text-align: center;
+}
+
+.g-hero__text {
+	text-align: center;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	max-width: 1026px;
+	margin: 0 auto 44px;
+}
+.g-hero__content {
+	.g-hero__image {
+		img {
+			object-fit: cover;
+			border-radius: 12px;
+		}
+	}
+	.g-hero__block-text {
+		margin-top: 44px;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 17px;
+		.block-text__left {
+		}
+		.block-text__right {
+			
+		}
+		.text__block {
+			h3 {
+				font-family: "Lao MN";
+				font-size: 24px;
+				font-style: normal;
+				font-weight: 250;
+				line-height: normal;
+				margin-bottom: 24px;
+			}
+			p {
+				font-size: 16px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 140%; 
+				margin-bottom: 10px;
+			}
+		}
+	}
+}
+
+/*------------ G-Partnership -------------------------------------*/
+.g-partnership {
+	margin-top: 100px;
+	padding-bottom: 50px;
+}
+.g-partnership__body {
+}
+.g-partnership__title {
+	text-align: center;
+	max-width: 790px;
+	margin: 0 auto;
+	margin-bottom: 24px;
+}
+.g-partnership__column {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 20px;
+	position: relative;
+	.g-partnership__item {
+		margin-top: 30px;
+		p {
+			font-family: "Lao MN";
+			font-size: 18px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+			margin-top: 8px;
+		}
+	}
+}
+.baner__wrap {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	gap: 20px;
+	margin-top: 20px;
+	.g-partnership__item {
+		p {
+			font-family: "Lao MN";
+			font-size: 18px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+			margin-top: 8px;
+		}
+	}
+	.item_baner {
+		.g-partnership_baner {
+			background: url('../img/Graphic-paper/paper_baner.jpg') center / cover no-repeat;
+			border-radius: 18px;
+			padding: 44px 80px 44px 24px;
+			h3 {
+				color: #FFF;
+				font-size: 24px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: normal;
+				text-transform: uppercase;
+				max-width: 840px;
+				margin-bottom: 8px;
+			}
+			p {
+				color: #FFF;
+				font-size: 14px;
+				font-style: normal;
+				font-weight: 600;
+				line-height: 140%;
+				max-width: 750px;
+				margin-bottom: 18px;
+			}
+		}
+		.g-contributing_button-baner {
+			a {
+				color: #000000;
+				text-align: center;
+				font-size: 14px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: normal;
+				border-radius: 64px;
+				border: 1px solid #ffffff;
+				background: #ffffff;
+				padding: 14px 54px;
+				margin-top: 20px;
+				display: inline-flex;
+				transition: all 0.3s ease 0s;
+				&:hover {
+					background: transparent;
+					color: #ffffff;
+					border: 1px solid #ffffff;
+				}
+			}
+		}
+	}
+}
 
 
-/*------------ -------------------------------------*/
+/*------------ contributing ----------------------------*/
+.g-contributing__mission {
+	margin-top: 100px;
+}
+.g-contributing__body {
+	padding-bottom: 60px;
+}
+.g-contributing_content {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	margin-top: 100px;
+}
+.g-contributing__text {
+	margin-right: 100px;
+	h3 {
+		font-family: "Lao MN";
+		font-size: 44px;
+		font-style: normal;
+		font-weight: 250;
+		line-height: normal;
+		margin-bottom: 12px;
+	}
+	p {
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 140%;
+	}
+}
+.g-contributing__image {
+	width: 100%;
+	img {
+		border-radius: 12px;
+		object-fit: cover;
+	}
+}
+.g-contributing_content-reverse {
+	.g-contributing__text {
+		margin-right: 0;
+		margin-left: 100px;
+	}
+}
+.g-contributing_button {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	a {
+		color: #FFF;
+		text-align: center;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		border-radius: 64px;
+		border: 1px solid #0060FF;
+		background: #0060FF;
+		padding: 14px 54px;
+		margin-top: 20px;
+		display: inline-flex;
+		transition: all 0.3s ease 0s;
+		&:hover {
+			background: transparent;
+			color: #0060FF;
+		}
+	}
+}
 
+/*------------ experience ----------------------------*/
+.section__experience-g {
+	margin: 50px 0;
+}
 
-
-
-/*------------  ----------------------------*/
-
-
+.g-experience__body {
+	background: linear-gradient(87deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.26) 79.91%), url('../img/Graphic-paper/g-bottom_img.jpg') center / cover no-repeat;
+	border-radius: 18px;
+	padding: 80px 64px;
+	.g-experience__title {
+		color: #FFF;
+		font-family: "Lao MN";
+		font-size: 32px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		max-width: 715px;
+		margin-bottom: 24px;
+	}
+	p {
+		color: #FFF;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 140%;
+		max-width: 756px;
+	}
+	p:not(:last-child) {
+		margin-bottom: 24px;
+	}
+	.g-experience_button {
+		a {
+			color: #FFF;
+			text-align: center;
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: normal;
+			border-radius: 64px;
+			border: 1px solid #0060FF;
+			background: #0060FF;
+			padding: 14px 54px;
+			margin-top: 20px;
+			display: inline-flex;
+			transition: all 0.3s ease 0s;
+			&:hover {
+				background: transparent;
+				color: #0060FF;
+			}
+		}
+	}
+	
+}
 
 
 /*----------------------------------------------------------------------------------------*/
@@ -568,24 +850,146 @@ body.lock {
 }
 
 @media screen and (max-width:768.98px) {
+	.title__h1 {
+		font-size: 30px;
+	}
+	.title__h2 {
+		font-size: 24px;
+	}
+	.title__h3 {
+		font-size: 22px;
+	}
+	.hero__text {
+		font-size: 14px;
+	}
+	.g-hero__content {
+		.g-hero__block-text {
+			margin-top: 20px;
+			.text__block {
+				h3 {
+					font-size: 18px;
+				}
+				p {
+					font-size: 14px;
+				}
+			}
+		}
+	}
+	.g-partnership__column {
+		grid-template-columns: repeat(3, 1fr);
+		gap: 15px;
+	}
+	.g-contributing_content {
+		grid-template-columns: 1fr;
+		.g-contributing__text {
+			margin-right: 0;
+			margin-left: 0;
+			h3 {
+				font-size: 24px;
+			}
+			p {
+				font-size: 14px;
+				margin-bottom: 24px;
+			}
+		}
+	}
+	.contributing_content {
+		grid-template-columns: 1fr;
+		.contributing__text {
+			margin-right: 0;
+			margin-left: 0;
+			h3 {
+				font-size: 24px;
+			}
+			p {
+				font-size: 14px;
+				margin-bottom: 24px;
+			}
+		}
+	}
+	.g-contributing_content-reverse {
+		display: flex;
+		flex-direction: column-reverse;
+		margin-top: 60px;
+		.g-contributing__text {
+			margin-bottom: 40px;
+			.g-contributing_button {
+				align-items: center;
+			}
+		}
+	}
+	.baner__wrap {
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		.item_baner .g-partnership_baner h3 {
+			font-size: 16px;
+		}
+	}
+	.g-experience__body {
+		padding: 40px 32px;
+		.g-experience__title {
+			font-size: 24px;
+		}
+		p {
+			font-size: 14px;
+		}
 
-
+	}
 }
 
 @media screen and (max-width:559.98px) {
-
+	.g-hero__content {
+		.g-hero__block-text {
+			grid-template-columns: 1fr;
+		}
+	}
+	.g-hero__image {
+		img {
+			height: 180px;
+		}
+	}
 
 }
 
 @media screen and (max-width:479.98px) {
-
-
-
+	.g-partnership {
+		margin-top: 70px;
+	}
+	.g-partnership__column {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 10px;
+	}
+	.g-contributing__mission {
+		margin-top: 70px;
+	}
+	.baner__wrap {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
 }
 
-@media screen and (max-width: 414.98px){
-	
-	
+@media screen and (max-width: 414.98px) {
+	.g-contributing_content {
+		margin-top: 70px;
+	}
+	.g-partnership__column {
+		.g-partnership__item {
+			p {
+				font-size: 14px;
+			}
+		}
+	}
+	.baner__wrap {
+		.g-partnership__item {
+			p {
+				font-size: 14px;
+			}
+		}
+		.item_baner .g-partnership_baner {
+			padding: 44px 24px;
+			border-radius: 8px;
+		}
+	}
 	
 
 }

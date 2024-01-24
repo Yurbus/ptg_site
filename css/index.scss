@@ -742,8 +742,9 @@ img{
 }
 .h-partners__description{
 	text-align:center;
-	font-size:14px;
-	margin-bottom:44px
+	font-size:16px;
+	margin-bottom:44px;
+	line-height: 140%;
 }
 @media(max-width: 768px){
 	.h-partners__description{
