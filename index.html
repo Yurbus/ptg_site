@@ -42,12 +42,12 @@
 						<li class="menu__link"><a class="menu__link" href="news.html">News</a></li>             
 					</ul>
 					<div class="header__button-mobile btn__header">
-						<a href="contacts.html" class="contact_us popup-link">Contact</a>
+						<a href="contacts.html" class="contact_us">Contact</a>
 					</div>
 				</div>
-				<div class="header__button btn__header">
-					<a href="contacts.html" class="contact_us popup-link">Contact</a>
-				</div>
+				<span class="header__button btn__header">
+					<a href="contacts.html" class="contact_us">Contact</a>
+				</span>
 				<!----- mobile menu icon-------->
 				<div class="menu__icon">
 					<span></span>
@@ -55,7 +55,6 @@
 			</div>
 		</div>
 	</header>
-
 	<div class="wrapper">
 		<section class="head" id="head">
 			<div class="container">
@@ -75,7 +74,6 @@
 							<li> <span id="countries">0</span> countries with satisfied customers</li>
 						</ul>
 					</div>
-
 					<div class="head__images-desc">
 						<img class="" src="img/product/parraccio.png" alt="">
 						<img class="" src="img/product/nesqwick.png" alt="">
@@ -201,21 +199,21 @@
 					</div>
 					<div class="h-news__item"> <a href="https://test.trainer.dp.ua/?post_type=post&p=100" class="h-news__img">
                 <img src="https://test.trainer.dp.ua/wp-content/uploads/2023/12/1.png" alt="">
-              </a> <a href="https://test.trainer.dp.ua/?post_type=post&p=100" class="h-news__heading">Reducing Carbon Footprint with Innovative Sustainable Materials</a>
+                </a> <a href="https://test.trainer.dp.ua/?post_type=post&p=100" class="h-news__heading">Reducing Carbon Footprint with Innovative Sustainable Materials</a>
 						<div class="h-news__except">
 							<p>Discover how the latest advancements in recycling technology by GreenWave Paper Company are reshaping the industry&#8217;s approach to sustainability, turning waste into valuable resources for a greener tomorrow.</p>
 						</div>
 					</div>
 					<div class="h-news__item"> <a href="https://test.trainer.dp.ua/?post_type=post&p=98" class="h-news__img">
                 <img src="https://test.trainer.dp.ua/wp-content/uploads/2024/01/ss.png" alt="">
-              </a> <a href="https://test.trainer.dp.ua/?post_type=post&p=98" class="h-news__heading">Transforming Waste into Resource: Pioneering the Circular Economy</a>
+                </a> <a href="https://test.trainer.dp.ua/?post_type=post&p=98" class="h-news__heading">Transforming Waste into Resource: Pioneering the Circular Economy</a>
 						<div class="h-news__except">
 							<p>Explore the unveiling of PaperCo&#8217;s innovative plant-based paper production, revolutionizing the industry&#8217;s environmental impact with a sustainable approach </p>
 						</div>
 					</div>
 					<div class="h-news__item"> <a href="https://test.trainer.dp.ua/?post_type=post&p=1" class="h-news__img">
                 <img src="https://test.trainer.dp.ua/wp-content/uploads/2023/12/1.png" alt="">
-              </a> <a href="https://test.trainer.dp.ua/?post_type=post&p=1" class="h-news__heading">Reducing Carbon Footprint with Innovative Sustainable Materials</a>
+                </a> <a href="https://test.trainer.dp.ua/?post_type=post&p=1" class="h-news__heading">Reducing Carbon Footprint with Innovative Sustainable Materials</a>
 						<div class="h-news__except">
 							<p>Discover how the latest advancements in recycling technology by GreenWave Paper Company are reshaping the industry&#8217;s approach to sustainability, turning waste into valuable resources for a greener tomorrow.</p>
 						</div>
@@ -298,8 +296,8 @@
 			}
 		</style>
 	</div>
-
-	<div id="popup" class="popup"><!-- Popup -->
+	<!-------------------------- Popup ------------------------------>
+	<div id="popup" class="popup">
 		<div class="popup__body">
 			<div class="popup__content">
 				<a href="#" class="popup__close close-popup"><img src="img/close.svg" alt="close"></a>
@@ -337,6 +335,7 @@
     <script src="js/jquery.magnific-popup.min.js"></script>
 
 	<script>
+		// открыть под меню
 		document.addEventListener('DOMContentLoaded', function () {
 			let carrentMenuLink = document.querySelector('.carrent-menu__link');
 
@@ -348,6 +347,7 @@
     </script>
 
     <script>
+		// Слайдер на главной
 		if ($('.head').length) {
 			function nextSlide() {
 				let $active = $('.head__images-desc img.active');
@@ -367,6 +367,7 @@
 	}
     </script>
 	<script>
+		// Прокрутка чисел
 		function animateCount(element, targetValue, duration) {
 			$({ count: parseInt(element.text()) }).animate({ count: targetValue }, {
 				duration: duration,
@@ -378,7 +379,6 @@
 				}
 			});
 		}
-	
 		function startCountAnimationMob() {
 			// Create an Intersection Observer
 			var observer = new IntersectionObserver(function(entries, observer) {
@@ -392,11 +392,9 @@
 					}
 				});
 			}, { threshold: 0.5 });
-	
 			// Observe the element you want to animate
 			observer.observe(document.querySelector('.head__list-mob'));
 		}
-	
 		// Trigger the counting animation when the document is ready
 		$(document).ready(function () {
 			startCountAnimationMob();
