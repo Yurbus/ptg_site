@@ -51,6 +51,7 @@
 	display: block;
 	width: 32px;
 	height: 32px;
+	z-index: 2;
 }
 
 /*------------ Form style -----------------------*/
@@ -122,16 +123,41 @@
 		.policy__check {
 			display: flex;
             align-items: center;
-			font-size: 12px;
 			.policy {
-				margin-right: 7px;
-				width: 24px;
-				height: 24px;
-				border: 1px solid #000;
+				position: relative;
+				display: none;
 			}
-			.policy._error {
-				border: 1px solid red;
+			.policy:checked + .policy__label::after {
+				transform: scale(1);
 			}
+			.policy__label {
+				position: relative;
+				font-size: 12px;
+				display: flex;
+    			align-items: center;
+				cursor: pointer;
+				&::before {
+					content: '';
+					width: 24px;
+					height: 24px;
+					border: 1px solid #000;
+					border-radius: 3px;
+					margin-right: 10px;
+				}
+				&::after {
+					content: '';
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					top: 5px;
+					left: 5px;
+					background: url('../img/check.svg') no-repeat;
+					transform: scale(0);
+				}
+			}
+		}
+		.policy__check._error .policy__label::before {
+			border: 1px solid red;
 		}
 		.contact__btn {
 			color: #FFF;

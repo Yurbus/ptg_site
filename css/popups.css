@@ -51,6 +51,7 @@
   display: block;
   width: 32px;
   height: 32px;
+  z-index: 2;
 }
 
 /*------------ Form style -----------------------*/
@@ -123,15 +124,40 @@
 .form__contact .bottom__action .policy__check {
   display: flex;
   align-items: center;
-  font-size: 12px;
 }
 .form__contact .bottom__action .policy__check .policy {
-  margin-right: 7px;
+  position: relative;
+  display: none;
+}
+.form__contact .bottom__action .policy__check .policy:checked + .policy__label::after {
+  transform: scale(1);
+}
+.form__contact .bottom__action .policy__check .policy__label {
+  position: relative;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.form__contact .bottom__action .policy__check .policy__label::before {
+  content: "";
   width: 24px;
   height: 24px;
   border: 1px solid #000;
+  border-radius: 3px;
+  margin-right: 10px;
 }
-.form__contact .bottom__action .policy__check .policy._error {
+.form__contact .bottom__action .policy__check .policy__label::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 5px;
+  left: 5px;
+  background: url("../img/check.svg") no-repeat;
+  transform: scale(0);
+}
+.form__contact .bottom__action .policy__check._error .policy__label::before {
   border: 1px solid red;
 }
 .form__contact .bottom__action .contact__btn {
