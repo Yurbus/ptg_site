@@ -270,8 +270,11 @@ img{
 	border-radius:16px;
 	-o-object-fit:cover;
 	object-fit:cover;
-	max-height:518px;
+	height:100%;
 	margin-bottom: 24px;
+}
+.content .image_height {
+	height: 512px;
 }
 @media(max-width: 768px){
 	.content img{
@@ -1494,6 +1497,9 @@ img{
 	.head__description {
 		margin-top: 505px;
 	}
+	.content .image_height {
+		height: 300px;
+	}
 	.bottom__body {
 		padding: 40px 32px;
 		.bottom__title {
@@ -1502,7 +1508,6 @@ img{
 		p {
 			font-size: 14px;
 		}
-
 	}
 }
 @media screen and (max-width:480.98px) {
@@ -1519,6 +1524,9 @@ img{
 				margin-top: 30px;
 			}
 		}
+	}
+	.content .image_height {
+		height: 180px;
 	}
 }
 

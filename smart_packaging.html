@@ -7,6 +7,7 @@
 	<link rel="icon" type="image/x-icon" href="img/favicon.svg">
 	<title>Contacts</title>
 
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 	<link rel="stylesheet" href="css/smart_packaging.css">
 	<link rel="stylesheet" href="css/popups.css">
 	<link rel="stylesheet" href="css/magnific-popup.css">
@@ -56,8 +57,119 @@
 			</div>
 		</header>
 		<main class="page">
-			
+			<!---------------------------------- Hero ---------------------------------------->
+			<seсtion class="section__hero-sm">
+                <div class="sm-hero__container">
+                    <div class="sm-hero__body">
+                        <h1 class="sm-hero__title title__h1">SMART PACKAGING</h1>
+                        <p class="sm-hero__text">FAST. FAIR. FLEXIBLE.</p>
+                        <div class="sm-hero__content">
+                            <div class="sm-hero__image"><img src="img/about/main_image.png" alt="image"></div>
+                            <div class="sm-hero__block-text">
+                                <div class="block-text__left text__block">
+                                    <h3>Smart Packaging Solutions: Meeting the Trifecta of Protection, Sales, and Sustainability</h3>
+                                    <p>Good and intelligent packaging has to meet a wide range of requirements and demands: It must protect. It must sell. And 
+										increasingly, it must also be sustainable and contribute to the circular economy. Paper-based packaging like corrugated 
+										board is very well suited to meeting all these requirements. Together with our long-standing partner, ELGRAF Ltd, we 
+										offer smart packaging solutions. Especially for particularly demanding products and the retail sector. 
+                                    </p>
+                                </div>
+                                <div class="block-text__right text__block">
+                                    <h3>How do our customers benefit from this expertise and service?</h3>
+                                    <p>ELGRAF is an independent producer and quick decision-maker. Customers benefit from low entry costs and a fast start-up time 
+										for new projects. Beyond this, ELGRAF offers short production and delivery times. And – as one of the frontrunners in this 
+										area – ELGRAF is specialized in sophisticated micro-flute solutions such as the E-, F- and N-flute. As PTG, we take on 
+										the consulting and entire handling of your projects and are your direct contact.  
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </seсtion>
+			<!---------------------------------- Slider ---------------------------------------->
+			<section class="section__choose">
+                <div class="choose__container">
+                    <div class="choose__body">
 
+                        <div class="choose__slider">
+                            <!-- Slider main container -->
+                            <div class="swiper">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper" class="mySwiper" pagination="true" pagination-clickable="true" slides-per-view="4"
+                                space-between="30" centered-slides="true">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide">
+                                        <div class="slider__item">
+                                            <img src="img/about/choose_1.jpg" alt="image">
+                                            <h3>Innovation and creativity:</h3>
+                                            <p>Tbecause packaging is part of your brand story</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider__item">
+                                            <img src="img/about/choose_2.jpg" alt="image">
+                                            <h3>Focus on sustainability:</h3>
+											<p>our packaging is FSC-certified and fully recyclable</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider__item">
+                                            <img src="img/about/choose_3.jpg" alt="image">
+                                            <h3>Print quality at the highest level</h3>
+                                            <p>flexo and offset printing for razor-sharp and vibrant colors</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider__item">
+                                            <img src="img/about/choose_4.jpg" alt="image">
+                                            <h3>Variety of packaging types:</h3>
+                                            <p>from tailor-made boxes to innovative displays</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider__item">
+                                            <img src="img/about/choose_3.jpg" alt="image">
+                                            <h3>Logistics-optimized solutions</h3>
+											<p>Not only space-saving, but also seamlessly adapted to your shipping process</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- If we need pagination -->
+                                <div class="swiper-pagination"></div>
+                            
+                                <!-- If we need navigation buttons -->
+                                <div class="swiper-button-prev">
+                                    <img src="img/arrow_slider_left.svg" alt="">
+                                </div>
+                                <div class="swiper-button-next">
+                                    <img src="img/arrow_slider_right.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+			<!---------------------------------- Products ---------------------------------------->
+			<section class="products__section">
+				<div class="products__container">
+					<div class="products__body">
+						<div class="products__subtitle">Our close and long-time partnership with ELGRAF allows us to offer our customers a wide range of smart packaging solutions:</div>
+						<h3 class="products__title title__h3">PORTFOLIO OF PACKAGING SOLUTIONS</h3>
+						<div class="products__items">
+
+							<div class="item__product">
+								<img src="img/product/smart_packaging/box_1.png" alt="photo">
+								<h4>Industrial products</h4>
+								<a href="" class="product_btn">Check product</a>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+			
 		</main>
 
 		<footer class="footer">
@@ -151,12 +263,14 @@
 
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 	<script src="js/sendmail.js"></script>
     <script src="js/maskeinput.js"></script>
 	<script src="js/script.js"></script>
 	<script src="js/popups.js"></script>
-	<script src="js/slick.js"></script>
-	<script src="js/slider.js"></script>
+	<script src="js/sw_slider.js"></script>
+	<script src="js/swiper.js"></script>
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script>
 		$(".gallery").magnificPopup({
