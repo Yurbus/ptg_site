@@ -333,27 +333,34 @@
 		<div class="popup__body">
 			<div class="popup__content">
 				<a href="#" class="popup__close close-popup"><img src="img/close.svg" alt="close"></a>
-				
-				<!-- Модальная форма -->
-				<div class="modal modal-form__body" id="myModal">
-					<div class="modal-content">
-						<div id="modal-product-details">
-							<!-- Здесь будут отображаться детали товара  -->
-						</div>
+				<form action="#" id="form" class="form__contact">
+					<h4>To order</h4>
+					<div class="input__croup">
+						<input type="hidden" class="input_date" name="productTitle" value="">
+						<input type="text" class="input_date _req" name="name" placeholder="Name">
+						<input type="text" class="input_date" name="lastName" placeholder="Second Name">
 					</div>
-				</div>
+					<input type="tel" id="phone_mask" class="input_date _req" name="phone" placeholder="Phone">
+					<input type="email" class="input_date _req _email" name="email" placeholder="Email">
+					<textarea class="input_date" name="message" cols="30" rows="7" placeholder="Type something"></textarea>
+					
+					<div class="bottom__action">
+						<div class="policy__check">
+							<input type="checkbox" checked id="policy" name="interest" value="policy">
+							<label for="policy" class="policy__label _req">I confirm the processing of my <a href="#" target="_blank">personal data</a></label>
+						</div>
+						<button type="submit" class="contact__btn">Send</button>
+					</div>
+				</form>
 			</div>
 		</div>
 	</div><!-- End popup -->
 
 
-
-
-
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-	<script src="js/product.js"></script>
+
 	<script src="js/sendmail.js"></script>
     <script src="js/maskeinput.js"></script>
 	<script src="js/script.js"></script>
@@ -361,15 +368,24 @@
 	<script src="js/sw_slider.js"></script>
 	<script src="js/swiper.js"></script>
 	<script src="js/jquery.magnific-popup.min.js"></script>
+
 	<script>
-		$(".gallery").magnificPopup({
-			delegate: "a",
-				type : 'image',
-				gallery : {
-				enabled : true
-			}
+		document.addEventListener('DOMContentLoaded', function() {
+			// Получаем все ссылки "Check product"
+			var productLinks = document.querySelectorAll('.product_btn');
+			
+			// Для каждой ссылки добавляем обработчик события
+			productLinks.forEach(function(link) {
+				link.addEventListener('click', function(event) {
+					event.preventDefault(); // Предотвращаем переход по ссылке
+		
+					var productTitle = this.parentElement.querySelector('h4').textContent; // Получаем заголовок продукта из карточки
+					document.querySelector('input[name="productTitle"]').value = productTitle; // Устанавливаем его в скрытое поле формы
+				});
 			});
+		});
 	</script>
+
 	<script>
 		document.addEventListener('DOMContentLoaded', function () {
 		let carrentMenuLink = document.querySelector('.carrent-menu__link');
@@ -380,6 +396,7 @@
 		});
 	});
 	</script>
+	
 
 	</body>
 	</html>

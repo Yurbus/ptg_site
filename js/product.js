@@ -37,6 +37,17 @@
             </div>
         </form>
         `;
+         
+        // Теперь, когда форма добавлена к элементу modalProductDetails, вы можете найти элементы формы внутри него
+        const form = modalProductDetails.querySelector('#form');
+        const nameInput = form.querySelector('input[name="name"]');
+        const lastNameInput = form.querySelector('input[name="lastName"]');
+        const phoneInput = form.querySelector('input[name="phone"]');
+        const emailInput = form.querySelector('input[name="email"]');
+        const messageInput = form.querySelector('textarea[name="message"]');
+        const policyCheckbox = form.querySelector('#policy');
+        const submitButton = form.querySelector('.contact__btn');
+        // Теперь у вас есть доступ к элементам формы и вы можете выполнять с ними нужные действия   
 
     });
 });
