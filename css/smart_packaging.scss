@@ -416,10 +416,11 @@ body.lock {
 	}
 	.products__items {
 		display: grid;
-		grid-template-columns: repeat(4, 1fr);
+		grid-template-columns: repeat(3, 1fr);
 		gap: 20px;
 		margin-top: 44px;
 		.item__product {
+			position: relative;
 			border-radius: 12px;
 			background: #FFF;
 			box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.07);
@@ -427,35 +428,226 @@ body.lock {
 			img {
 				object-fit: cover;
 				max-width: 284px;
+				padding: 15px 30px;
+				max-width: 100%;
 			}
 			h4 {
 				font-family: "Lao MN";
-				font-size: 24px;
+				font-size: 20px;
 				font-style: normal;
 				font-weight: 400;
 				line-height: normal;
 				text-transform: uppercase;
+				margin-bottom: 130px;
 			}
 			.product_btn {
+				position: absolute;
+				margin: 0 auto;
+				bottom: 64px;
+				left: calc(50% - 97px);
 				color: #FFF;
 				text-align: center;
 				font-size: 14px;
 				font-style: normal;
 				font-weight: 600;
 				line-height: normal;
+				transition: all 0.3s ease 0s;
 
+				border: 1px solid transparent;
 				border-radius: 64px;
 				background: #0060FF;
-				padding: 18px 44px;
-				display: inline-flex;
-				justify-content: center;
+				padding: 18px 0;
+				text-align: center;
+				width: 194px;
+				&:hover {
+					background: transparent;
+					border: 1px solid #0060FF;
+					color: #0060FF;
+				}
 			}
 		}
 		
 	}
+}
+
+/*------------ Portfolio ----------------------------*/
+.section__portfolio {
+	margin: 70px 0;
+}
+.portfolio__body {
+	.portfolio__titlle {
+		text-align: center;
+		font-family: "Lao MN";
+		font-size: 32px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+	}
+	.portfolio__video {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 20px;
+		margin: 44px 0;
+		.video__item {
+			display: flex;
+			flex-direction: column;
+			iframe {
+				border-radius: 8px;
+			}
+			span {
+				font-family: "Lao MN";
+				font-size: 18px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: normal;
+				margin: 12px 0;
+			}
+			&:hover {
+				span {
+					color: #0060FF;
+				}
+			}
+		}
+	}
+	
 	
 }
 
+
+.content__form {
+	.form__contact {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		background: #FFFFFF;
+		padding: 34px 24px;
+		border-radius: 12px;
+		width: 678px;
+		&::after {
+			position: absolute;
+			content: '';
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background: #ffffff40 url('../img/loading.gif') center / 50px no-repeat;
+			opacity: 0;
+			visibility: hidden;
+		}
+		h4 {
+			font-family: "Lao MN";
+			font-size: 24px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+			text-transform: none;
+			margin-bottom: 32px;
+			text-align: left;
+		}
+		span {
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+			text-align: center;
+			margin-bottom: 24px;
+		}
+		.input__croup {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 12px;
+		}
+		.input__croup ._error {
+			border: 1px solid red;
+		}
+		input._error {
+			border: 1px solid red;
+		}
+		.input_date {
+			color: #000 !important;
+			font-size: 12px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+			font-family: 'Montserrat';
+			border-radius: 8px;
+			background: #F6F6F6;
+			padding: 18px;
+			border: none;
+			margin-bottom: 12px;
+		}
+
+		.bottom__action {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;				
+			.policy__check {
+				display: flex;
+				align-items: center;
+				.policy {
+					position: relative;
+					display: none;
+				}
+				.policy:checked + .policy__label::after {
+					transform: scale(1);
+				}
+				.policy__label {
+					position: relative;
+					font-size: 12px;
+					display: flex;
+					align-items: center;
+					cursor: pointer;
+					&::before {
+						content: '';
+						width: 24px;
+						height: 24px;
+						border: 1px solid #000;
+						border-radius: 3px;
+						margin-right: 10px;
+					}
+					&::after {
+						content: '';
+						position: absolute;
+						width: 100%;
+						height: 100%;
+						top: 5px;
+						left: 5px;
+						background: url('../img/check.svg') no-repeat;
+						transform: scale(0);
+					}
+				}
+			}
+			.policy__check._error .policy__label::before {
+				border: 1px solid red;
+			}
+			.contact__btn {
+				color: #FFF;
+				text-align: center;
+				font-size: 14px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: normal;
+				border-radius: 64px;
+				border: 1px solid #0060FF;
+				background: #0060FF;
+				padding: 14px 54px;
+				display: inline-flex;
+				transition: all 0.3s ease 0s;
+				cursor: pointer;
+				&:hover {
+					background: transparent;
+					color: #0060FF;
+				}
+
+			}
+		}
+		
+	}
+}
+.form__contact._sending::after {
+	opacity: 1;
+	visibility: visible;
+}
 
 
 /*----------------------------------------------------------------------------------------*/
@@ -787,8 +979,12 @@ body.lock {
 }
 
 @media screen and (max-width:859.98px) {
-	
-
+	.portfolio__body .portfolio__video {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 15px;
+		margin: 32px 0;
+	}
 }
 
 @media screen and (max-width:768.98px) {
@@ -823,6 +1019,24 @@ body.lock {
 	.swiper-button-next {
 		right: 5%;
 	}
+	.products__body {
+		.products__subtitle {
+			font-size: 22px;
+		}
+		.products__title {
+			font-size: 24px;
+		}
+		.products__items {
+			grid-template-columns: repeat(2, 1fr);
+			gap: 10px;
+		}
+	}
+	.portfolio__body {
+		.portfolio__titlle {
+			font-size: 24px;
+		}
+	}
+	
 }
 
 @media screen and (max-width:559.98px) {
@@ -849,7 +1063,12 @@ body.lock {
 			}
 		}
 	}
-
+	.portfolio__body .portfolio__video {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		gap: 10px;
+		margin: 32px 0;
+	}
 
 
 }
@@ -869,12 +1088,55 @@ body.lock {
 			padding: 0 16px 24px;
 		}
 	}
-
-
+	.products__body {
+		.products__items {
+			.item__product {
+				img {
+					padding: 0 10px 30px;
+				}
+				h4 {
+					font-size: 16px;
+				}
+				.product_btn {
+					left: calc(50% - 83px);
+					bottom: 56px;
+					padding: 15px 0;
+					width: 166px;
+				}
+			}
+		}
+	
+	}
 }
 
 @media screen and (max-width: 414.98px){
+	.products__body {
+		.products__body .products__subtitle {
+			font-size: 16px;
+		}
+		.products__title {
+			font-size: 20px;
+		}
+		.products__items {
+			.item__product {
+				img {
+					padding: 3.25rem 0.325rem;
+				}
+				h4 {
+					margin-bottom: 90px;
+					font-size: 14px;
+				}
+				.product_btn {
+					left: calc(50% - 73px);
+					bottom: 36px;
+					padding: 12px 0;
+					width: 146px;
+					font-size: 12px;
+				}
+			}
+		}
 	
+	}
 	
 	
 

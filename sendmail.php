@@ -22,6 +22,9 @@
     // Body
     $body = '<h1>Message from PTG website</h1>';
 
+    if (isset($_POST['productTitle']) && trim($_POST['productTitle']) !== '') {
+        $body .= '<p><strong>Checkbox:</strong> ' . $_POST['productTitle'] . '</p>';
+    }
     if (isset($_POST['name']) && trim($_POST['name']) !== '') {
         $body .= '<p><strong>Name:</strong> ' . $_POST['name'] . '</p>';
     }
@@ -38,7 +41,7 @@
         $body .= '<p><strong>Message:</strong> ' . $_POST['message'] . '</p>';
     }
     if (isset($_POST['interest']) && trim($_POST['interest']) !== '') {
-        $body .= '<p><strong>Checkbox:</strong> ' . $_POST['message'] . '</p>';
+        $body .= '<p><strong>Checkbox:</strong> ' . $_POST['interest'] . '</p>';
     }
 
     $mail->Body = $body;
