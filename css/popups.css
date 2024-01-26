@@ -55,7 +55,7 @@
 }
 
 /*------------ Form style -----------------------*/
-.popup__content .form__contact {
+.form__contact {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -64,7 +64,7 @@
   border-radius: 12px;
   width: 678px;
 }
-.popup__content .form__contact::after {
+.form__contact::after {
   position: absolute;
   content: "";
   left: 0;
@@ -75,7 +75,7 @@
   opacity: 0;
   visibility: hidden;
 }
-.popup__content .form__contact h4 {
+.form__contact h4 {
   font-family: "Lao MN";
   font-size: 32px;
   font-style: normal;
@@ -84,7 +84,7 @@
   text-align: center;
   text-transform: uppercase;
 }
-.popup__content .form__contact span {
+.form__contact span {
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -92,18 +92,18 @@
   text-align: center;
   margin-bottom: 24px;
 }
-.popup__content .form__contact .input__croup {
+.form__contact .input__croup {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 12px;
 }
-.popup__content .form__contact .input__croup ._error {
+.form__contact .input__croup ._error {
   border: 1px solid red;
 }
-.popup__content .form__contact input._error {
+.form__contact input._error {
   border: 1px solid red;
 }
-.popup__content .form__contact .input_date {
+.form__contact .input_date {
   color: #000 !important;
   font-size: 12px;
   font-style: normal;
@@ -116,12 +116,12 @@
   border: none;
   margin-bottom: 12px;
 }
-.popup__content .form__contact .bottom__action {
+.form__contact .bottom__action {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.popup__content .form__contact .bottom__action .contact__btn {
+.form__contact .bottom__action .contact__btn {
   color: #FFF;
   text-align: center;
   font-size: 14px;
@@ -136,7 +136,7 @@
   transition: all 0.3s ease 0s;
   cursor: pointer;
 }
-.popup__content .form__contact .bottom__action .contact__btn:hover {
+.form__contact .bottom__action .contact__btn:hover {
   background: transparent;
   color: #0060FF;
 }

@@ -23,7 +23,7 @@
     $body = '<h1>Message from PTG website</h1>';
 
     if (isset($_POST['productTitle']) && trim($_POST['productTitle']) !== '') {
-        $body .= '<p><strong>Checkbox:</strong> ' . $_POST['productTitle'] . '</p>';
+        $body .= '<p><strong>Title product:</strong> ' . $_POST['productTitle'] . '</p>';
     }
     if (isset($_POST['name']) && trim($_POST['name']) !== '') {
         $body .= '<p><strong>Name:</strong> ' . $_POST['name'] . '</p>';
