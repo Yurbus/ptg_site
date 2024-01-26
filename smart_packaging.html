@@ -372,14 +372,14 @@
 	<script>
 		document.addEventListener('DOMContentLoaded', function() {
 			// Получаем все ссылки "Check product"
-			var productLinks = document.querySelectorAll('.product_btn');
+			let productLinks = document.querySelectorAll('.product_btn');
 			
 			// Для каждой ссылки добавляем обработчик события
 			productLinks.forEach(function(link) {
 				link.addEventListener('click', function(event) {
 					event.preventDefault(); // Предотвращаем переход по ссылке
 		
-					var productTitle = this.parentElement.querySelector('h4').textContent; // Получаем заголовок продукта из карточки
+					let productTitle = this.parentElement.querySelector('h4').textContent; // Получаем заголовок продукта из карточки
 					document.querySelector('input[name="productTitle"]').value = productTitle; // Устанавливаем его в скрытое поле формы
 				});
 			});
