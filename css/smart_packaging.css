@@ -374,7 +374,7 @@ body.lock {
   margin-bottom: 130px;
   text-align: center;
 }
-.products__body .products__items .item__product .product_btn {
+.products__body .products__items .item__product .prod_btn {
   position: absolute;
   margin: 0 auto;
   bottom: 64px;
@@ -390,10 +390,9 @@ body.lock {
   border-radius: 64px;
   background: #0060FF;
   padding: 18px 0;
-  text-align: center;
   width: 194px;
 }
-.products__body .products__items .item__product .product_btn:hover {
+.products__body .products__items .item__product .prod_btn:hover {
   background: transparent;
   border: 1px solid #0060FF;
   color: #0060FF;

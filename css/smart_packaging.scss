@@ -388,7 +388,7 @@ body.lock {
 				margin-bottom: 130px;
 				text-align: center;
 			}
-			.product_btn {
+			.prod_btn {
 				position: absolute;
 				margin: 0 auto;
 				bottom: 64px;
@@ -405,7 +405,6 @@ body.lock {
 				border-radius: 64px;
 				background: #0060FF;
 				padding: 18px 0;
-				text-align: center;
 				width: 194px;
 				&:hover {
 					background: transparent;
@@ -414,7 +413,6 @@ body.lock {
 				}
 			}
 		}
-		
 	}
 }
 
