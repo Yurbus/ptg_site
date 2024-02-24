@@ -428,6 +428,7 @@ img{
 					transition: opacity 0.5s ease, transform 0.5s ease; 
 					transform-origin: top center;
 					background-color: #fff;
+					border-radius: 15px;
 					box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
 					.sub-menu__link:not(:last-child) {
 						margin-bottom: 20px;
@@ -1161,16 +1162,21 @@ img{
 				font-weight: 600;
 				line-height: normal;
 				text-decoration-line: underline;
+			
 			}
 			.tel {
 				font-size: 18px;
 				font-style: normal;
 				font-weight: 700;
 				line-height: 140%;
+				
 			}
 		}
+		.li_margin {
+			margin-top: 30px;
+		}
 		li:not(:last-child) {
-			margin-bottom: 44px;
+			margin-bottom: 6px;
 		}
 	}
 }
@@ -1313,6 +1319,96 @@ img{
 	}
 
 }
+
+/*-------------------------- Koocies ------------------------------------------------*/
+.koocies_container {
+	display:flex;
+	justify-content:center;
+}
+.koocies {
+	position: fixed;
+	max-width: 1280px;
+	bottom: 0;
+	padding: 32px 24px;
+	background: #000;
+	border-radius: 24px 24px 0 0;
+	width: 100%;
+	z-index: 30;
+}
+.koocies {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+.koocies.show {
+    opacity: 1;
+    visibility: visible;
+}
+.koocies.show body {
+	background: rgba(0, 0, 0, 0.5);
+}
+.koocies__wrapp {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	.koocies__left {
+		display: flex;
+		align-items: center;
+		img {
+			max-width: 44px;
+			margin-right: 24px;
+		}
+		.koocies__text {
+			display: flex;
+			flex-direction: column;
+			.text__koocie {
+				font-family: 'Lao MN';
+				font-size: 24px;
+				line-height: 130%;
+				color: #fff;
+			}
+			.link__koocie {
+				font-size: 14px;
+				font-weight: 600;
+				color: #609CFF;
+				text-decoration: underline;
+			}
+		}
+	}
+	.koocies__right {
+		.koocies__buttons {
+		}
+		.koocie__btn {
+			font-size: 12px;
+			font-weight: 700;
+			padding: 17px;
+			width: 180px;
+			border-radius: 30px;
+			color: #fff;
+			border: none;
+			background: transparent;
+			cursor: pointer;
+			transition: all 0.2s ease 0s;
+		}
+		.btn__reject {
+			border: 1px solid #fff;
+			&:hover {
+				background: #fff;
+				color: #0060FF;
+			}
+		}
+		.btn__accept {
+			background: #0060FF;
+			margin-left: 18px;
+			border: 1px solid #0060FF;
+			&:hover {
+				background: #0050d2;
+			}
+		}
+	}
+	
+}
+
 
 
 /*----------------------------------------------------------------------------------------*/

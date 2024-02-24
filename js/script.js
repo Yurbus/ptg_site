@@ -106,6 +106,29 @@ jQuery(document).ready(function() {
     });
 
 //-------------------------------------------------------------------------------------------------
+// koocies 
+document.addEventListener("DOMContentLoaded", function() {
+    let koocies = document.querySelector('.koocies');
+
+    setTimeout(function() {
+        koocies.classList.add('show');
+    }, 500);
+
+    let acceptBtn = document.querySelector('.btn__accept');
+    let rejectBtn = document.querySelector('.btn__reject');
+
+    acceptBtn.addEventListener('click', function() {
+        koocies.classList.remove('show');
+    });
+
+    rejectBtn.addEventListener('click', function() {
+        koocies.classList.remove('show');
+    });
+});
+
+
+
+//-------------------------------------------------------------------------------------------------
 // Прокрутка при клике
 // const menuLinks = document.querySelectorAll('.menu__link[data-goto]');
 // if(menuLinks.length > 0) {

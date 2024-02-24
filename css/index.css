@@ -435,6 +435,7 @@ img {
   transition: opacity 0.5s ease, transform 0.5s ease;
   transform-origin: top center;
   background-color: #fff;
+  border-radius: 15px;
   box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
 }
 .header__main .header__menu .menu__list .carrent-menu__link .sub-menu__List .sub-menu__link:not(:last-child) {
@@ -1217,8 +1218,11 @@ img {
   font-weight: 700;
   line-height: 140%;
 }
+.footer__address .address_list .li_margin {
+  margin-top: 30px;
+}
 .footer__address .address_list li:not(:last-child) {
-  margin-bottom: 44px;
+  margin-bottom: 6px;
 }
 
 .footer__navigation {
@@ -1361,6 +1365,95 @@ img {
     margin: 0px 20px;
   }
 }
+/*-------------------------- Koocies ------------------------------------------------*/
+.koocies_container {
+  display: flex;
+  justify-content: center;
+}
+
+.koocies {
+  position: fixed;
+  max-width: 1280px;
+  bottom: 0;
+  padding: 32px 24px;
+  background: #000;
+  border-radius: 24px 24px 0 0;
+  width: 100%;
+  z-index: 30;
+}
+
+.koocies {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+
+.koocies.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.koocies.show body {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.koocies__wrapp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.koocies__wrapp .koocies__left {
+  display: flex;
+  align-items: center;
+}
+.koocies__wrapp .koocies__left img {
+  max-width: 44px;
+  margin-right: 24px;
+}
+.koocies__wrapp .koocies__left .koocies__text {
+  display: flex;
+  flex-direction: column;
+}
+.koocies__wrapp .koocies__left .koocies__text .text__koocie {
+  font-family: "Lao MN";
+  font-size: 24px;
+  line-height: 130%;
+  color: #fff;
+}
+.koocies__wrapp .koocies__left .koocies__text .link__koocie {
+  font-size: 14px;
+  font-weight: 600;
+  color: #609CFF;
+  text-decoration: underline;
+}
+.koocies__wrapp .koocies__right .koocie__btn {
+  font-size: 12px;
+  font-weight: 700;
+  padding: 17px;
+  width: 180px;
+  border-radius: 30px;
+  color: #fff;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.2s ease 0s;
+}
+.koocies__wrapp .koocies__right .btn__reject {
+  border: 1px solid #fff;
+}
+.koocies__wrapp .koocies__right .btn__reject:hover {
+  background: #fff;
+  color: #0060FF;
+}
+.koocies__wrapp .koocies__right .btn__accept {
+  background: #0060FF;
+  margin-left: 18px;
+  border: 1px solid #0060FF;
+}
+.koocies__wrapp .koocies__right .btn__accept:hover {
+  background: #0050d2;
+}
+
 /*----------------------------------------------------------------------------------------*/
 /*------------------------------ Media query ---------------------------------------------*/
 /*----------------------------------------------------------------------------------------*/

@@ -388,7 +388,7 @@ body.lock {
 
 /*------------ experience ----------------------------*/
 .section__experience {
-  margin: 50px 0;
+  margin: 50px 0 100px;
 }
 
 .experience__body {

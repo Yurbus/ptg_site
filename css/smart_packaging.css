@@ -288,19 +288,22 @@ body.lock {
   padding-bottom: 50px;
 }
 
+.choose__body {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
 .choose__title {
   text-align: center;
   margin-bottom: 44px;
 }
 
-.choose__slider {
-  min-width: 0;
-  position: relative;
-}
-
 .slider__item img {
   margin-bottom: 20px;
   border-radius: 8px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .slider__item h3 {
   font-family: "Lao MN";
@@ -317,63 +320,6 @@ body.lock {
   line-height: 140%;
 }
 
-.swiper {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  padding-bottom: 80px;
-}
-
-.swiper-slide {
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.swiper-slide-active {
-  width: 30%;
-}
-.swiper-slide-active .slider__item {
-  background: #0060FF;
-  padding: 10px;
-  border-radius: 12px;
-  color: #fff;
-}
-
-.swiper-button-next, .swiper-button-prev {
-  top: 97%;
-}
-
-.swiper-button-prev {
-  position: absolute;
-  width: 43px;
-  left: 35%;
-}
-
-.swiper-button-next {
-  position: absolute;
-  width: 43px;
-  right: 35%;
-}
-
-.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
-  content: "";
-}
-
-.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
-  content: "";
-}
-
 /*------------ Products ----------------------------*/
 .products__section {
   margin-top: 100px;
@@ -386,7 +332,7 @@ body.lock {
   font-family: "Lao MN";
   font-size: 32px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   line-height: normal;
   margin: 0 auto 32px;
 }
@@ -426,6 +372,7 @@ body.lock {
   line-height: normal;
   text-transform: uppercase;
   margin-bottom: 130px;
+  text-align: center;
 }
 .products__body .products__items .item__product .product_btn {
   position: absolute;
@@ -837,14 +784,15 @@ body.lock {
   .sm-hero__content .sm-hero__block-text .text__block p {
     font-size: 14px;
   }
-  .swiper-button-next, .swiper-button-prev {
-    top: 96.5%;
+  .choose__body {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
   }
-  .swiper-button-prev {
-    left: 5%;
+  .slider__item {
+    margin-bottom: 30px;
   }
-  .swiper-button-next {
-    right: 5%;
+  .slider__item img {
+    margin-bottom: 15px;
   }
   .products__body .products__subtitle {
     font-size: 22px;
@@ -882,9 +830,19 @@ body.lock {
   }
 }
 @media screen and (max-width: 479.98px) {
+  .products__section {
+    margin-top: 10px;
+  }
+  .choose__body {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
   .choose__slider {
     margin-left: 5px;
     margin-right: 5px;
+  }
+  .slider__item img {
+    height: 200px;
   }
   .slider__item h3 {
     font-size: 18px;
