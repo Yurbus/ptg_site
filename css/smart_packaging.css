@@ -857,11 +857,12 @@ body.lock {
   .products__body .products__items .item__product h4 {
     font-size: 16px;
   }
-  .products__body .products__items .item__product .product_btn {
-    left: calc(50% - 83px);
-    bottom: 56px;
-    padding: 15px 0;
-    width: 166px;
+  .products__body .products__items .item__product .prod_btn {
+    left: calc(50% - 75px);
+    bottom: 32px;
+    padding: 12px 0;
+    width: 150px;
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 414.98px) {
