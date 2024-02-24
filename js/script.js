@@ -138,6 +138,70 @@ $(document).ready(function () {
 });
 
 //-------------------------------------------------------------------------------------------------
+// Прокрутка чисел на странице mobile
+function animateCountMob(element, targetValue, duration) {
+    $({ count: parseInt(element.text()) }).animate({ count: targetValue }, {
+        duration: duration,
+        step: function () {
+            element.text(Math.floor(this.count));
+        },
+        complete: function () {
+            element.text(targetValue);
+        }
+    });
+}
+function startCountAnimationMob() {
+    animateCount($('#years_mob'), 22, 2000); // Adjust duration as needed
+    animateCount($('#partners_mob'), 15, 2000);
+    animateCount($('#countries_mob'), 14, 2000);
+}
+// Trigger the counting animation when the document is ready
+$(document).ready(function () {
+    startCountAnimationMob();
+});
+
+
+//-------------------------------------------------------------------------------------------------
+// Слайдер на главной
+if ($('.head').length) {
+    function nextSlide() {
+        let $active = $('.head__images-desc img.active');
+        let $next = $active.next().length ? $active.next() : $('.head__images-desc img:first');
+        $active.removeClass('active');
+        $next.addClass('active');
+    }
+    function nextSlide2() {
+        let $active = $('.head__images-mobile img.active');
+        let $next = $active.next().length ? $active.next() : $('.head__images-mobile img:first');
+        $active.removeClass('active');
+        $next.addClass('active');
+    }
+
+setInterval(nextSlide, 2000);
+setInterval(nextSlide2, 2000);
+}
+
+
+
+//-------------------------------------------------------------------------------------------------
+// По клику на кнопку подставляем заголовок
+// document.addEventListener('DOMContentLoaded', function() {
+//     // Получаем все ссылки "Check product"
+//     let productLinks = document.querySelectorAll('.product_btn');
+    
+//     // Для каждой ссылки добавляем обработчик события
+//     productLinks.forEach(function(link) {
+//         link.addEventListener('click', function(event) {
+//             event.preventDefault(); // Предотвращаем переход по ссылке
+
+//             let productTitle = this.parentElement.querySelector('h4').textContent; // Получаем заголовок продукта из карточки
+//             document.querySelector('input[name="productTitle"]').value = productTitle; // Устанавливаем его в скрытое поле формы
+//         });
+//     });
+// });
+
+
+//-------------------------------------------------------------------------------------------------
 // Прокрутка при клике
 // const menuLinks = document.querySelectorAll('.menu__link[data-goto]');
 // if(menuLinks.length > 0) {
