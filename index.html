@@ -342,7 +342,7 @@
 					
 					<div class="bottom__action">
 						<div class="policy__check">
-							<input type="checkbox" checked id="policy" class="policy" name="interest" value="I confirm the processing of my personal data">
+							<input type="checkbox" id="policy" class="policy" name="interest" value="I confirm the processing of my personal data">
 							<label for="policy" class="policy__label">I confirm the processing of my <a href="#" target="_blank">personal data</a></label>
 						</div>
 						<button type="submit" class="contact__btn">Send</button>
@@ -362,5 +362,29 @@
 	<script src="js/sw_slider.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
 
+	<script>
+		//-------------------------------------------------------------------------------------------------
+		// Прокрутка чисел на странице 
+		function animateCountMob(element, targetValue, duration) {
+			$({ count: parseInt(element.text()) }).animate({ count: targetValue }, {
+				duration: duration,
+				step: function () {
+					element.text(Math.floor(this.count));
+				},
+				complete: function () {
+					element.text(targetValue);
+				}
+			});
+		}
+		function startCountAnimationMob() {
+			animateCount($('#years_mob'), 22, 2000); // Adjust duration as needed
+			animateCount($('#partners_mob'), 15, 2000);
+			animateCount($('#countries_mob'), 14, 2000);
+		}
+		// Trigger the counting animation when the document is ready
+		$(document).ready(function () {
+			startCountAnimationMob();
+		});
+	</script>
 </body>
 </html>

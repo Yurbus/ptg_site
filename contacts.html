@@ -70,7 +70,7 @@
                                     <li>
                                         <img src="img/Sustainability/Location.svg" alt="image">
 										<span>PTG Paper Trading Group <br>
-											<strong>SAPlace Numa-Droz 2, CP 32472000 Neuchâtel<br>Switzerland</strong>
+											<strong>SAPlace Numa-Droz 2, CP 32472000<br> Neuchâtel, Switzerland</strong>
 										</span>
                                     </li>
                                     <li>
@@ -91,7 +91,7 @@
                                 <form action="#" id="form" class="form__contact">
                                     <h4 class="form_title">Please, enter correct information:</h4>
                                     <div class="input__croup">
-                                        <input type="text" class="input_date _req" name="name" placeholder="Name">
+                                        <input type="text" class="group_input_date input_date _req" name="name" placeholder="Name">
                                         <input type="text" class="input_date" name="lastName" placeholder="Second Name">
                                     </div>
                                     <input type="tel" id="phone_mask" class="input_date _req" name="phone" placeholder="Phone">
@@ -100,7 +100,7 @@
                                     
                                     <div class="bottom__action">
                                         <div class="policy__check">
-                                            <input type="checkbox" checked id="policy" class="policy" name="interest" value="I confirm the processing of my personal data">
+                                            <input type="checkbox" id="policy" class="policy" name="interest" value="I confirm the processing of my personal data" required>
                                             <label for="policy" class="policy__label">I confirm the processing of my <a href="#" target="_blank">personal data</a></label>
                                         </div>
                                         <button type="submit" class="contact__btn">Send</button>
@@ -219,16 +219,6 @@
 				enabled : true
 			}
 			});
-	</script>
-	<script>
-		document.addEventListener('DOMContentLoaded', function () {
-		let carrentMenuLink = document.querySelector('.carrent-menu__link');
-
-		carrentMenuLink.addEventListener('click', function () {
-			// Переключаем класс "clicked" для изменения стилей
-			this.classList.toggle('clicked');
-		});
-	});
 	</script>
 
 	</body>

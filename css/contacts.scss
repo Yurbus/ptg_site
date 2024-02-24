@@ -570,6 +570,25 @@ body.lock {
 	}
 }
 @media screen and (max-width:992.98px) {
+	.content__form {
+		.form__contact {
+			width: 100%;
+			padding: 10px;
+			.input__croup {
+				grid-template-columns: 1fr;
+				.group_input_date {
+					margin-bottom: 0;
+				}
+			}
+			.bottom__action {
+				flex-direction: column;
+				align-items: start;
+			}
+			.contact__btn {
+				margin-top: 20px;
+			}
+		}
+	}
 	.footer__body {
 		display: grid;
 		grid-template-columns: 160px 220px 1fr;
@@ -837,6 +856,9 @@ body.lock {
 				.input__croup {
 					grid-template-columns: 1fr;
 					gap: 0;
+					.group_input_date {
+						margin-bottom: 12px;
+					}
 				}
 				.bottom__action {
 					flex-direction: column;

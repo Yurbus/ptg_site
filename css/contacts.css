@@ -563,6 +563,23 @@ body.lock {
   }
 }
 @media screen and (max-width: 992.98px) {
+  .content__form .form__contact {
+    width: 100%;
+    padding: 10px;
+  }
+  .content__form .form__contact .input__croup {
+    grid-template-columns: 1fr;
+  }
+  .content__form .form__contact .input__croup .group_input_date {
+    margin-bottom: 0;
+  }
+  .content__form .form__contact .bottom__action {
+    flex-direction: column;
+    align-items: start;
+  }
+  .content__form .form__contact .contact__btn {
+    margin-top: 20px;
+  }
   .footer__body {
     display: grid;
     grid-template-columns: 160px 220px 1fr;
@@ -782,6 +799,9 @@ body.lock {
   .contacts__content .content__form .form__contact .input__croup {
     grid-template-columns: 1fr;
     gap: 0;
+  }
+  .contacts__content .content__form .form__contact .input__croup .group_input_date {
+    margin-bottom: 12px;
   }
   .contacts__content .content__form .form__contact .bottom__action {
     flex-direction: column;

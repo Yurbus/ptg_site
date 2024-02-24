@@ -426,14 +426,14 @@ body.lock {
 	}
 }
 .content__form {
-	.form__contact {
+	.sys_form__contact {
 		position: relative;
 		display: flex;
 		flex-direction: column;
 		background: #FFFFFF;
 		padding: 34px 24px;
 		border-radius: 12px;
-		width: 678px;
+		max-width: 100%;
 		&::after {
 			position: absolute;
 			content: '';
@@ -559,11 +559,6 @@ body.lock {
 	opacity: 1;
 	visibility: visible;
 }
-
-
-
-
-
 
 
 
@@ -825,6 +820,15 @@ body.lock {
 			}
 		}
 	}
+	.sys_form__contact {
+		.bottom__action {
+			align-items: start;
+			flex-direction: column;
+		}
+		.contact__btn {
+			margin-top: 20px;
+		}
+	}
 }
 
 @media screen and (max-width:959.98px) {
@@ -1020,6 +1024,19 @@ body.lock {
 @media screen and (max-width:479.98px) {
 	.section__sertificates {
 		margin-top: 60px;
+	}
+	.content__form .sys_form__contact {
+		padding: 10px;
+		h4 {
+			font-size: 18px;
+		}
+		.input__croup {
+			grid-template-columns: 1fr;
+			gap: 0;
+		}
+		.bottom__action {
+			align-items: start;
+		}
 	}
 }
 

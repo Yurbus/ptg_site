@@ -337,34 +337,5 @@
 	<script src="js/swiper.js"></script>
 	<script src="js/jquery.magnific-popup.min.js"></script>
 
-	<script>
-		document.addEventListener('DOMContentLoaded', function() {
-			// Получаем все ссылки "Check product"
-			let productLinks = document.querySelectorAll('.product_btn');
-			
-			// Для каждой ссылки добавляем обработчик события
-			productLinks.forEach(function(link) {
-				link.addEventListener('click', function(event) {
-					event.preventDefault(); // Предотвращаем переход по ссылке
-		
-					let productTitle = this.parentElement.querySelector('h4').textContent; // Получаем заголовок продукта из карточки
-					document.querySelector('input[name="productTitle"]').value = productTitle; // Устанавливаем его в скрытое поле формы
-				});
-			});
-		});
-	</script>
-
-	<script>
-		document.addEventListener('DOMContentLoaded', function () {
-		let carrentMenuLink = document.querySelector('.carrent-menu__link');
-
-		carrentMenuLink.addEventListener('click', function () {
-			// Переключаем класс "clicked" для изменения стилей
-			this.classList.toggle('clicked');
-		});
-	});
-	</script>
-	
-
-	</body>
-	</html>
+</body>
+</html>

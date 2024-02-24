@@ -198,17 +198,28 @@ input[type=checkbox]:checked + .policy__label::after {
   }
 }
 @media screen and (max-width: 414.98px) {
+  .popup__content {
+    margin-top: 20px;
+  }
+  .form__contact {
+    padding: 20px;
+  }
   .form__contact .input__croup {
     grid-template-columns: 1fr;
     margin-bottom: 12px;
   }
   .form__contact .input__croup .input_date {
     margin-bottom: 0;
+    padding: 12px;
   }
   .form__contact .bottom__action {
     flex-direction: column;
   }
   .form__contact .bottom__action .policy__check {
     margin: 15px 0;
+  }
+  .popup__close {
+    top: 10px;
+    right: 10px;
   }
 }/*# sourceMappingURL=popups.css.map */

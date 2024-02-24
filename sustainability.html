@@ -161,7 +161,9 @@
                                 <ul class="address__list">
                                     <li>
                                         <img src="img/Sustainability/Location.svg" alt="image">
-                                        <a href="">PTG Paper Trading Group <br><strong>SAPlace Numa-Droz 2, CP 32472000 NeuchâtelSwitzerland</strong></a>
+                                        <span>PTG Paper Trading Group <br>
+											<strong>SAPlace Numa-Droz 2, CP 32472000<br> Neuchâtel, Switzerland</strong>
+										</span>
                                     </li>
                                     <li>
                                         <img src="img/Sustainability/Call.svg" alt="image">
@@ -178,7 +180,7 @@
                                 </div>
                             </div>
                             <div class="content__form">
-                                <form action="#" id="form" class="form__contact">
+                                <form action="#" id="form" class="sys_form__contact">
                                     <h4>Please, enter correct information:</h4>
                                     <div class="input__croup">
                                         <input type="text" class="input_date _req" name="name" placeholder="Name">
@@ -190,7 +192,7 @@
                                     
                                     <div class="bottom__action">
                                         <div class="policy__check">
-                                            <input type="checkbox" checked class="policy" id="policy" name="interest" value="I confirm the processing of my personal data">
+                                            <input type="checkbox" class="policy" id="policy" name="interest" value="I confirm the processing of my personal data" re>
                                             <label for="policy" class="policy__label">I confirm the processing of my <a href="#" target="_blank">personal data</a></label>
                                         </div>
                                         <button type="submit" class="contact__btn">Send</button>
@@ -290,10 +292,6 @@
 		</div>
 	</div><!-- End popup -->
 
-
-
-
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="js/sendmail.js"></script>
     <script src="js/maskeinput.js"></script>
@@ -311,16 +309,6 @@
             }
             });
     </script>
-    <script>
-     document.addEventListener('DOMContentLoaded', function () {
-        let carrentMenuLink = document.querySelector('.carrent-menu__link');
-
-        carrentMenuLink.addEventListener('click', function () {
-            // Переключаем класс "clicked" для изменения стилей
-            this.classList.toggle('clicked');
-        });
-    });
-</script>
 
 </body>
 </html>

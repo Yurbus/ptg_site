@@ -415,16 +415,16 @@ body.lock {
   border-radius: 6px;
 }
 
-.content__form .form__contact {
+.content__form .sys_form__contact {
   position: relative;
   display: flex;
   flex-direction: column;
   background: #FFFFFF;
   padding: 34px 24px;
   border-radius: 12px;
-  width: 678px;
+  max-width: 100%;
 }
-.content__form .form__contact::after {
+.content__form .sys_form__contact::after {
   position: absolute;
   content: "";
   left: 0;
@@ -435,7 +435,7 @@ body.lock {
   opacity: 0;
   visibility: hidden;
 }
-.content__form .form__contact h4 {
+.content__form .sys_form__contact h4 {
   font-family: "Lao MN";
   font-size: 24px;
   font-style: normal;
@@ -445,7 +445,7 @@ body.lock {
   margin-bottom: 32px;
   text-align: left;
 }
-.content__form .form__contact span {
+.content__form .sys_form__contact span {
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -453,18 +453,18 @@ body.lock {
   text-align: center;
   margin-bottom: 24px;
 }
-.content__form .form__contact .input__croup {
+.content__form .sys_form__contact .input__croup {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 12px;
 }
-.content__form .form__contact .input__croup ._error {
+.content__form .sys_form__contact .input__croup ._error {
   border: 1px solid red;
 }
-.content__form .form__contact input._error {
+.content__form .sys_form__contact input._error {
   border: 1px solid red;
 }
-.content__form .form__contact .input_date {
+.content__form .sys_form__contact .input_date {
   color: #000 !important;
   font-size: 12px;
   font-style: normal;
@@ -477,30 +477,30 @@ body.lock {
   border: none;
   margin-bottom: 12px;
 }
-.content__form .form__contact .bottom__action {
+.content__form .sys_form__contact .bottom__action {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.content__form .form__contact .bottom__action .policy__check {
+.content__form .sys_form__contact .bottom__action .policy__check {
   display: flex;
   align-items: center;
 }
-.content__form .form__contact .bottom__action .policy__check .policy {
+.content__form .sys_form__contact .bottom__action .policy__check .policy {
   position: relative;
   display: none;
 }
-.content__form .form__contact .bottom__action .policy__check .policy:checked + .policy__label::after {
+.content__form .sys_form__contact .bottom__action .policy__check .policy:checked + .policy__label::after {
   transform: scale(1);
 }
-.content__form .form__contact .bottom__action .policy__check .policy__label {
+.content__form .sys_form__contact .bottom__action .policy__check .policy__label {
   position: relative;
   font-size: 12px;
   display: flex;
   align-items: center;
   cursor: pointer;
 }
-.content__form .form__contact .bottom__action .policy__check .policy__label::before {
+.content__form .sys_form__contact .bottom__action .policy__check .policy__label::before {
   content: "";
   width: 24px;
   height: 24px;
@@ -508,7 +508,7 @@ body.lock {
   border-radius: 3px;
   margin-right: 10px;
 }
-.content__form .form__contact .bottom__action .policy__check .policy__label::after {
+.content__form .sys_form__contact .bottom__action .policy__check .policy__label::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -518,10 +518,10 @@ body.lock {
   background: url("../img/check.svg") no-repeat;
   transform: scale(0);
 }
-.content__form .form__contact .bottom__action .policy__check._error .policy__label::before {
+.content__form .sys_form__contact .bottom__action .policy__check._error .policy__label::before {
   border: 1px solid red;
 }
-.content__form .form__contact .bottom__action .contact__btn {
+.content__form .sys_form__contact .bottom__action .contact__btn {
   color: #FFF;
   text-align: center;
   font-size: 14px;
@@ -536,7 +536,7 @@ body.lock {
   transition: all 0.3s ease 0s;
   cursor: pointer;
 }
-.content__form .form__contact .bottom__action .contact__btn:hover {
+.content__form .sys_form__contact .bottom__action .contact__btn:hover {
   background: transparent;
   color: #0060FF;
 }
@@ -790,6 +790,13 @@ body.lock {
   .contacts__content .content__form .form__contact input {
     padding: 20px 18px;
   }
+  .sys_form__contact .bottom__action {
+    align-items: start;
+    flex-direction: column;
+  }
+  .sys_form__contact .contact__btn {
+    margin-top: 20px;
+  }
 }
 @media screen and (max-width: 959.98px) {
   /*-------- Mobile menu style ---------*/
@@ -954,6 +961,19 @@ body.lock {
 @media screen and (max-width: 479.98px) {
   .section__sertificates {
     margin-top: 60px;
+  }
+  .content__form .sys_form__contact {
+    padding: 10px;
+  }
+  .content__form .sys_form__contact h4 {
+    font-size: 18px;
+  }
+  .content__form .sys_form__contact .input__croup {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .content__form .sys_form__contact .bottom__action {
+    align-items: start;
   }
 }
 @media screen and (max-width: 414.98px) {

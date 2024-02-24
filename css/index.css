@@ -422,7 +422,7 @@ img {
 }
 .header__main .header__menu .menu__list .carrent-menu__link img {
   width: 12px;
-  margin-left: 18px;
+  margin-left: 10px;
 }
 .header__main .header__menu .menu__list .carrent-menu__link .sub-menu__List {
   position: absolute;
@@ -1648,6 +1648,7 @@ img {
 @media screen and (max-width: 560.98px) {
   .koocies__wrapp .koocies__left .koocies__text .text__koocie {
     font-size: 18px;
+    padding-right: 15px;
   }
   .koocies__wrapp .koocies__right .koocie__btn {
     padding: 12px;
@@ -1674,10 +1675,10 @@ img {
 }
 @media screen and (max-width: 414.98px) {
   .koocies {
-    padding: 20px 10px;
+    padding: 20px;
   }
   .koocies__wrapp .koocies__left img {
-    max-width: 30px;
+    max-width: 38px;
     margin-right: 16px;
   }
   .koocies__wrapp .koocies__left img .koocies__text .text__koocie {

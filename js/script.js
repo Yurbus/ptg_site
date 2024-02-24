@@ -72,29 +72,6 @@ jQuery(document).ready(function($) {
     $("#phone_mask").mask("+41 (99)-999-99-99",{placeholder:" "});
 });
 
-
-//-------------------------------------------------------------------------------------------------
-// Прокрутка чисел на странице 
-function animateCount(element, targetValue, duration) {
-    $({ count: parseInt(element.text()) }).animate({ count: targetValue }, {
-        duration: duration,
-        step: function () {
-            element.text(Math.floor(this.count));
-        },
-        complete: function () {
-            element.text(targetValue);
-        }
-    });
-}
-function startCountAnimation() {
-    animateCount($('#years'), 22, 2000); // Adjust duration as needed
-    animateCount($('#partners'), 15, 2000);
-    animateCount($('#countries'), 14, 2000);
-}
-// Trigger the counting animation when the document is ready
-$(document).ready(function () {
-    startCountAnimation();
-});
 //-------------------------------------------------------------------------------------------------
 // скрол на верх
 jQuery(document).ready(function() {
@@ -135,6 +112,29 @@ document.addEventListener('DOMContentLoaded', function () {
         // Переключаем класс "clicked" для изменения стилей
         this.classList.toggle('clicked');
     });
+});
+
+//-------------------------------------------------------------------------------------------------
+// Прокрутка чисел на странице 
+function animateCount(element, targetValue, duration) {
+    $({ count: parseInt(element.text()) }).animate({ count: targetValue }, {
+        duration: duration,
+        step: function () {
+            element.text(Math.floor(this.count));
+        },
+        complete: function () {
+            element.text(targetValue);
+        }
+    });
+}
+function startCountAnimation() {
+    animateCount($('#years'), 22, 2000); // Adjust duration as needed
+    animateCount($('#partners'), 15, 2000);
+    animateCount($('#countries'), 14, 2000);
+}
+// Trigger the counting animation when the document is ready
+$(document).ready(function () {
+    startCountAnimation();
 });
 
 //-------------------------------------------------------------------------------------------------
