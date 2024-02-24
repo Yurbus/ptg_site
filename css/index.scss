@@ -1541,6 +1541,7 @@ img{
 						text-align: center;
 						z-index: 10;
 						margin-top: 30px;
+						margin-left: -30px;
 						.sub-menu__link {
 							margin-bottom: 20px;
 						}
@@ -1610,7 +1611,11 @@ img{
 			font-size: 14px;
 		}
 	}
+	.footer__address .address_list li:not(:last-child) {
+		margin-bottom: 6px;
+	}
 }
+
 @media screen and (max-width:560.98px) {
 	.koocies__wrapp .koocies__left .koocies__text .text__koocie {
 		font-size: 18px;

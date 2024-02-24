@@ -126,7 +126,16 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+//-------------------------------------------------------------------------------------------------
+// открыть под меню
+document.addEventListener('DOMContentLoaded', function () {
+    let carrentMenuLink = document.querySelector('.carrent-menu__link');
 
+    carrentMenuLink.addEventListener('click', function () {
+        // Переключаем класс "clicked" для изменения стилей
+        this.classList.toggle('clicked');
+    });
+});
 
 //-------------------------------------------------------------------------------------------------
 // Прокрутка при клике

@@ -1577,6 +1577,7 @@ img {
     text-align: center;
     z-index: 10;
     margin-top: 30px;
+    margin-left: -30px;
   }
   .header__main .header__menu .menu__list .carrent-menu__link .sub-menu__List .sub-menu__link {
     margin-bottom: 20px;
@@ -1639,6 +1640,9 @@ img {
   }
   .bottom__body p {
     font-size: 14px;
+  }
+  .footer__address .address_list li:not(:last-child) {
+    margin-bottom: 6px;
   }
 }
 @media screen and (max-width: 560.98px) {
