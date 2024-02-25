@@ -61,12 +61,67 @@
   line-height: 140%;
 }
 .footer__address .address_list li:not(:last-child) {
-  margin-bottom: 44px;
+  margin-bottom: 5px;
+}
+.footer__address .address_list .li_margin {
+  margin-top: 24px;
 }
 
 .footer__navigation {
   display: flex;
   justify-content: space-between;
+}
+
+.navigation_list {
+  margin: 0 36px;
+}
+.navigation_list h4 {
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 19.6px */
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.navigation_list .navigation_left li,
+.navigation_list .navigation_center li,
+.navigation_list .navigation_right li {
+  margin-bottom: 18px;
+}
+.navigation_list .navigation_left li a,
+.navigation_list .navigation_center li a,
+.navigation_list .navigation_right li a {
+  color: #fff;
+  position: relative;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  font-family: "Montserrat";
+}
+.navigation_list .navigation_left li a:before,
+.navigation_list .navigation_center li a:before,
+.navigation_list .navigation_right li a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 0;
+  height: 1px;
+  background: #ffffff;
+  transition: all 0.5s ease;
+}
+.navigation_list .navigation_left li a:hover:before,
+.navigation_list .navigation_center li a:hover:before,
+.navigation_list .navigation_right li a:hover:before {
+  width: 100%;
+  left: 0;
+}
+.navigation_list .navigation_left li a:hover,
+.navigation_list .navigation_center li a:hover,
+.navigation_list .navigation_right li a:hover {
+  color: #ffffff;
 }
 
 .copyright {
@@ -128,7 +183,7 @@
     text-align: center;
   }
   .footer__address .address_list li:not(:last-child) {
-    margin-bottom: 32px;
+    margin-bottom: 5px;
   }
   .footer__navigation {
     margin: 45px 0 30px;
@@ -155,5 +210,124 @@
   .footer__navigation .navigation_list {
     margin: 0px 20px;
     width: 100%;
+  }
+}
+/*-------------------------- Koocies ------------------------------------------------*/
+.koocies_container {
+  display: flex;
+  justify-content: center;
+}
+
+.koocies {
+  position: fixed;
+  max-width: 1280px;
+  bottom: 0;
+  padding: 32px 24px;
+  background: #000;
+  border-radius: 24px 24px 0 0;
+  width: 100%;
+  z-index: 30;
+}
+
+.koocies {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+
+.koocies.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.koocies.show body {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.koocies__wrapp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.koocies__wrapp .koocies__left {
+  display: flex;
+  align-items: center;
+}
+.koocies__wrapp .koocies__left img {
+  max-width: 44px;
+  margin-right: 24px;
+}
+.koocies__wrapp .koocies__left .koocies__text {
+  display: flex;
+  flex-direction: column;
+}
+.koocies__wrapp .koocies__left .koocies__text .text__koocie {
+  font-family: "Lao MN";
+  font-size: 24px;
+  line-height: 130%;
+  color: #fff;
+}
+.koocies__wrapp .koocies__left .koocies__text .link__koocie {
+  font-size: 14px;
+  font-weight: 600;
+  color: #609CFF;
+  text-decoration: underline;
+}
+.koocies__wrapp .koocies__right .koocie__btn {
+  font-size: 12px;
+  font-weight: 700;
+  padding: 17px;
+  width: 180px;
+  border-radius: 30px;
+  color: #fff;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.2s ease 0s;
+}
+.koocies__wrapp .koocies__right .btn__reject {
+  border: 1px solid #fff;
+}
+.koocies__wrapp .koocies__right .btn__reject:hover {
+  background: #fff;
+  color: #0060FF;
+}
+.koocies__wrapp .koocies__right .btn__accept {
+  background: #0060FF;
+  margin-left: 18px;
+  border: 1px solid #0060FF;
+}
+.koocies__wrapp .koocies__right .btn__accept:hover {
+  background: #0050d2;
+}
+
+@media screen and (max-width: 959.98px) {
+  .koocies__wrapp {
+    flex-direction: column;
+  }
+  .koocies__wrapp .koocies__right {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 560.98px) {
+  .koocies__wrapp .koocies__left .koocies__text .text__koocie {
+    font-size: 18px;
+    padding-right: 65px;
+  }
+  .koocies__wrapp .koocies__right .koocie__btn {
+    padding: 12px;
+    width: 130px;
+  }
+}
+@media screen and (max-width: 414.98px) {
+  .koocies {
+    padding: 20px;
+  }
+  .koocies__wrapp .koocies__left img {
+    max-width: 38px;
+    margin-right: 16px;
+  }
+  .koocies__wrapp .koocies__left img .koocies__text .text__koocie {
+    font-size: 14px;
   }
 }/*# sourceMappingURL=footer.css.map */
