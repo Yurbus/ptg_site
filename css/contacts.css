@@ -84,7 +84,7 @@
   background: #FFFFFF;
   padding: 34px 24px;
   border-radius: 12px;
-  width: 678px;
+  max-width: 100%;
 }
 .content__form .form__contact::after {
   position: absolute;
