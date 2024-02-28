@@ -1,14 +1,88 @@
 @charset "UTF-8";
 
+.home-container {
+    max-width: 990px;
+    margin: 0 auto 100px;
+    padding: 0 15px;
+}
+.back__home {
+    margin-top: 170px;
+    margin-bottom: 18px;
+    a {
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        font-weight: 700;
+        color: #0060FF;
+        &:hover {
+            text-decoration: underline;
+        }
+        img {
+            width: 6px;
+            margin-right: 5px;
+        }
+    }
+}
+.policy_wrapper {
+    h2 {
+        text-transform: uppercase;
+        font-size: 44px;
+        font-family: 'Lao MN';
+        font-weight: 600;
+        margin-bottom: 12px;
+    }
+    h3 {
+        text-transform: uppercase;
+        font-size: 24px;
+        font-family: 'Lao MN';
+        font-weight: 600;
+        margin-bottom: 12px;
+    }
+    p {
+        font-size: 16px;
+        margin-bottom: 32px;
+        line-height: 130%;
+        a {
+            text-decoration: underline;
+            color: #0060FF;
+        }
+    }
+    span {
+        font-size: 16px;
+    }
+    ul {
+        margin-top: 5px;
+        margin-bottom: 32px;
+        margin-left: 25px;
+        li {
+            list-style: disc;
+            font-size: 16px;
+            line-height: 160%;
+        }
+    }
+}
 
-
-
-
-
-
-
-
-
-@media screen and (max-width: 768px){
-	
+@media screen and (max-width: 414px){
+    .back__home {
+        margin-top: 120px;
+    }
+	.policy_wrapper {
+        h2 {
+            font-size: 32px;
+        }
+        h3 {
+            font-size: 18px;
+        }
+        span {
+            font-size: 14px;
+        }
+        p {
+            font-size: 14px;
+        }
+        ul{
+            li {
+                font-size: 14px;
+            }
+        }
+    }
 }

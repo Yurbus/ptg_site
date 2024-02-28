@@ -1,1 +1,82 @@
-/*# sourceMappingURL=policy.css.map */
+.home-container {
+  max-width: 990px;
+  margin: 0 auto 100px;
+  padding: 0 15px;
+}
+
+.back__home {
+  margin-top: 170px;
+  margin-bottom: 18px;
+}
+.back__home a {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 700;
+  color: #0060FF;
+}
+.back__home a:hover {
+  text-decoration: underline;
+}
+.back__home a img {
+  width: 6px;
+  margin-right: 5px;
+}
+
+.policy_wrapper h2 {
+  text-transform: uppercase;
+  font-size: 44px;
+  font-family: "Lao MN";
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.policy_wrapper h3 {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-family: "Lao MN";
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.policy_wrapper p {
+  font-size: 16px;
+  margin-bottom: 32px;
+  line-height: 130%;
+}
+.policy_wrapper p a {
+  text-decoration: underline;
+  color: #0060FF;
+}
+.policy_wrapper span {
+  font-size: 16px;
+}
+.policy_wrapper ul {
+  margin-top: 5px;
+  margin-bottom: 32px;
+  margin-left: 25px;
+}
+.policy_wrapper ul li {
+  list-style: disc;
+  font-size: 16px;
+  line-height: 160%;
+}
+
+@media screen and (max-width: 414px) {
+  .back__home {
+    margin-top: 120px;
+  }
+  .policy_wrapper h2 {
+    font-size: 32px;
+  }
+  .policy_wrapper h3 {
+    font-size: 18px;
+  }
+  .policy_wrapper span {
+    font-size: 14px;
+  }
+  .policy_wrapper p {
+    font-size: 14px;
+  }
+  .policy_wrapper ul li {
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=policy.css.map */
