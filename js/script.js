@@ -27,12 +27,6 @@ const isMobile = {
 };
 
 //-------------------------------------------------------------------------------------------------
-// Animation
-// AOS.init({
-//     duration: 1200,
-// })
-
-//-------------------------------------------------------------------------------------------------
 // Меню бурнер
 const iconMenu = document.querySelector('.menu__icon');
 const menuBody = document.querySelector('.header__menu');
